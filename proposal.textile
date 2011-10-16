@@ -1,0 +1,20 @@
+Years 4-6 only.
+
+Proposed lesson content:
+# History of internet and web.  What is content, style and behaviour?
+# Content - HTML.  Editors, browsers, basic HTML - headings, paragraphs, class and id attributes
+# Style - CSS.  Color (yes, I'm afraid so - the internet is American), fonts, text, alignment
+# Behaviour - JavaScript.  A very basic introduction to programming in javascript
+# Content 2 - links, images, tables, lists
+# Style 2 - backgrounds, link states
+# Behaviour 2 - Using jQuery to move an element
+# Content 3 - Forms
+# Style 3 - the box model
+# Behaviour 3 - An introduction to Objects, Coffeescript
+
+Thereafter, the intention is to start the project which will continue until the end of the year (or everyone leaves).  Each student (or pair of students) will work at their own pace to create a web page for their present wish-list, with links to sites where their friends and relatives can purchase the goods (perhaps with a St Mark's affiliate account set up for the common web sites).  I will wander around helping out and then rush home to learn enough to keep ahead for the next week.  A back end (server) will be necessary towards the end - either I can write it or help the brighter students to do it.
+
+Requirements : 
+* Computer - 1 each for the instruction.  One between 2 might be better for the project.
+* Browser - Chrome or Firefox
+* Editor - Notepad would be fine.  Something with syntax highlighting for HTML, CSS and Javascript (such as http://notepad-plus-plus.org/) might be better
