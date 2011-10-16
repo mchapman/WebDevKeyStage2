@@ -1,4 +1,4 @@
-I am starting a web development after school club at my local primary school on 3rd November.  
+I am starting a web development after school club at my local primary school on 3rd November, with weekly 1 hour lessons after school on a Thursday (which apparently clashes with baton twirling club).
 
 I intend to keep this repo up to date with lesson plans, a record of how the lesson went, what I would have done differently etc.
 
