@@ -2,9 +2,9 @@ h1. Introduction and History
 
 h2. What is the web?
 
-In the beginning (which was not long ago) was the internet – a bunch of computers linked together mostly so that universities and academic institutions could share their research.
+In the beginning (which was not long ago) was the internet – a bunch of computers linked together mostly so that universities and academic institutions could share their research.  They used various protocols.  What is a protocol?  Informal speech, hands up in class, formal meetings, file transfers.
 
-One of the academic institutions was CERN, in Switzerland, which you may have heard of because they smash atoms together very fast.  "Tim Berners-Lee":http://www.facebook.com/profile.php?id=100000424716576 "(homepage here)":http://www.w3.org/People/Berners-Lee/, one of the people who worked at CERN, had an idea to make sharing information easier which he proposed in 1989.  This became the World Wide Web and the first site went public 6th August 1991 and the web was born.
+One of the academic institutions was CERN, in Switzerland, which you may have heard of because they smash atoms together very fast (maybe even faster than the speed of light).  "Tim Berners-Lee":http://www.facebook.com/profile.php?id=100000424716576 "(homepage here)":http://www.w3.org/People/Berners-Lee/, one of the people who worked at CERN, had an idea to make sharing information easier which he proposed in 1989.  This became the World Wide Web and the first site went public 6th August 1991 and the web was born.
 
 h2. Structure - HTML
 
