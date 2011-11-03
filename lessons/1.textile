@@ -47,6 +47,6 @@ For example:
 "http://en.wikipedia.org/wiki/School":http://en.wikipedia.org/wiki/School
 "http://blogger.com":http://blogger.com
 
-Optional homework:Have a read of "Tim Berners-Lee's Answers for Young People":http://www.w3.org/People/Berners-Lee/Kids.html
+Optional homework:Have a read of "Tim Berners-Lee's Answers for Young People":http://www.w3.org/People/Berners-Lee/Kids.html (miss out the section entitled "I'm interested in Math -- what exciting stuff is there we don't do at school?" which is quite advanced, unless you are super interested.
 
 
