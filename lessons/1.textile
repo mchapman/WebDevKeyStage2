@@ -47,5 +47,6 @@ For example:
 "http://en.wikipedia.org/wiki/School":http://en.wikipedia.org/wiki/School
 "http://blogger.com":http://blogger.com
 
-Optional homework:Have a read of http://www.w3.org/People/Berners-Lee/Kids
+Optional homework:Have a read of "Tim Berners-Lee's Answers for Young People":http://www.w3.org/People/Berners-Lee/Kids.html
+
 
