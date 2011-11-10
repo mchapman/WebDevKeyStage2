@@ -1,0 +1,38 @@
+h1. Structure and Content
+
+h2. Our first HTML file
+Demonstration:
+* Open notepad
+* Write hello world with no tags
+* Save as hello.html
+* Open in Chrome
+* Right click and Inspect Element
+Lessons:
+* (Some) browsers are forgiving
+* Structure of well formed HTML document - HTML, Head, Body
+Practical:
+* Do it yourself
+* If you finish quickly - add some more content and have a play at adding some of the tags we saw last week, h1, title 
+
+h2. Experimenting with jsfiddle.net
+
+h2. Some common tags
+<title>
+<h1>...<h6>
+
+h2. Presentational tags and semantic equivalents
+<br> and <p>
+<b> and <i> (and how <strong>, <b>, <em> and <i> are used in HTML5)
+
+h2. Some new tags
+<article> (and <div>)
+<section> (and <div>)
+<header> and <footer> (and div)
+<mark>
+
+h2. Pictures
+
+
+h2. class and id attributes
+
+h2. http://www.w3schools.com/
