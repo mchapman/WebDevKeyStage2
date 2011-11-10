@@ -1,0 +1,5 @@
+I delivered this lesson on 3rd November 2011 to 8 kids who were 9 or 10.  Due to some confusion about what day the after school club was (not my fault) it got off to a late start so took 50 minutes.  It included a brief diversion prompted by questions into the difference between http: and https:.  
+
+I had asked for Chrome to be installed, but they only had IE which wasted a few minutes (and if the way that I discovered is the only way to show source in IE7 then it is even worse than I thought).
+
+Most of them seemed to be mostly following.  One girl went home and told her mum it was 'boring' but then apparently showed her the source to google and started picking out HTML elements, so she clearly hadn't fallen asleep.
