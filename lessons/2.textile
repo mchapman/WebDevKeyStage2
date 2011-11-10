@@ -61,21 +61,6 @@ h2. Some new elements (and their old equivalents)
 @<header>@ (used to be @<div>@) - a the top section
 @<footer>@ (used to be @<div>@) - a bottom section
 
-h2. Pictures
-
-To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
-@<img src="http://www.placekitten.com/200/300" />@
-*src* is short for _source_ - where the picture comes from.  
-
-This picture comes from a site that generates placeholder pictures of whatever size you want (the size is specified between the slashes) for designers who need a picture to work on their layout but don't yet have the real picture.  There are other sites like this - "lipsum.com":http://www.lipsum.com/ generates latin holder text and if you don't like kittens you can get other pictures from "lorempixel.com":http://lorempixel.com/ which lets you choose your subject.
-
-If you want to resize your picture you can use the *width* and *height* attributes.  You are always meant to include an *alt* (for _alternative_) attribute in case the browser is incapable of displaying pictures, or for blind users.
-@<img src="http://www.placekitten.com/200/300" width="100" height="400" alt="A cute kitten - squashed!" />@
-
-h4. Practical
-
-Add a kitten 150 pixels high and 300 pixels wide to a page, using jsfiddle or notepad (or both).  What happens if you miss out the / character?
-
 h2. class and id attributes
 
 Two very important attributes that we need to use next week are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
@@ -83,6 +68,12 @@ Two very important attributes that we need to use next week are *id* and *class*
 h4. Practical 
 
 Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are still using HTML4.
+
+h2. Preview of next HTML lesson (in 3 weeks)
+
+To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
+@<img src="http://www.placekitten.com/200/300" />@
+*src* is short for _source_ - where the picture comes from.  
 
 h2. Want to learn some more?
 
