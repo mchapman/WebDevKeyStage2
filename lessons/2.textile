@@ -1,38 +1,89 @@
 h1. Structure and Content
 
 h2. Our first HTML file
-Demonstration:
+
+h4. Demonstration:
+
 * Open notepad
 * Write hello world with no tags
 * Save as hello.html
 * Open in Chrome
 * Right click and Inspect Element
-Lessons:
+
+h4. Lessons:
+
 * (Some) browsers are forgiving
 * Structure of well formed HTML document - HTML, Head, Body
-Practical:
+
+h4. Practical:
+
 * Do it yourself
 * If you finish quickly - add some more content and have a play at adding some of the tags we saw last week, h1, title 
 
 h2. Experimenting with jsfiddle.net
 
-h2. Some common tags
-<title>
-<h1>...<h6>
+If we use the website jsfiddle.net then we get two big advantages: 
+* We get to see what we are working on at the same time as the HTML
+* We get syntax highlighting
 
-h2. Presentational tags and semantic equivalents
-<br> and <p>
-<b> and <i> (and how <strong>, <b>, <em> and <i> are used in HTML5)
+h4. Demonstration:
 
-h2. Some new tags
-<article> (and <div>)
-<section> (and <div>)
-<header> and <footer> (and div)
-<mark>
+* Type in a heading and some body
+* Do Ctrl-Enter - notice that there are no default styles
+* Untick the "Normalised CSS" checkbox and do Ctrl-Enter
+
+h4. Practical
+
+* Repeat the demonstration, and have a play in jsfiddle
+
+h2. Some common elements
+
+@<title>@ - the browser title, remember, not something that appears in the body.  Head elements cannot be used in jsfiddle.net.
+@<h1>@...@<h6>@ - headings.  1 is the biggest, 6 the smallest
+
+h2. Presentational elements (old and bad!) and semantic equivalents (new and good)
+
+@<br>@ (use @<p>@ instead).  Here the old element doesn't add meaning to the content - it adds meaning to the empty gaps between content, which is nonsense.
+@<b>@ and @<i>@ should not be used for presentation (as we will be using CSS for that - starting next week).  Elements should be about meaning, not presentation.  Presentation can then be decided depending on the medium - a reader for blind people for instance, cannot read in bold, but can add stress to words.
+
+Related semantic markup elements from HTML5:
+* @<i>@ text in an “alternate voice,” such as foreign words, technical terms and typographically italicized text 
+* @<b>@ “stylistically offset” text, such as keywords and typographically emboldened text
+* @<em>@  for stress emphasis, i.e., something you’d pronounce differently
+* @<strong>@  for strong importance
+
+Another new element is @<mark>@ which marks the text, like you were highlighting it.
+
+h2. Some new elements (and their old equivalents)
+
+@<article>@ (used to be @<div>@) - a passage of text (and perhaps other content) that makes sense on its own
+@<section>@ (used to be @<div>@) - a passage of text belongs with another section to make complete sense
+@<header>@ (used to be @<div>@) - a the top section
+@<footer>@ (used to be @<div>@) - a bottom section
 
 h2. Pictures
 
+To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
+@<img src="http://www.placekitten.com/200/300" />@
+*src* is short for _source_ - where the picture comes from.  
+
+This picture comes from a site that generates placeholder pictures of whatever size you want (the size is specified between the slashes) for designers who need a picture to work on their layout but don't yet have the real picture.  There are other sites like this - "lipsum.com":http://www.lipsum.com/ generates latin holder text and if you don't like kittens you can get other pictures from "lorempixel.com":http://lorempixel.com/ which lets you choose your subject.
+
+If you want to resize your picture you can use the *width* and *height* attributes.  You are always meant to include an *alt* (for _alternative_) attribute in case the browser is incapable of displaying pictures, or for blind users.
+@<img src="http://www.placekitten.com/200/300" width="100" height="400" alt="A cute kitten - squashed!" />@
+
+h4. Practical
+
+Add a kitten 150 pixels high and 300 pixels wide to a page, using jsfiddle or notepad (or both).  What happens if you miss out the / character?
 
 h2. class and id attributes
 
-h2. http://www.w3schools.com/
+Two very important attributes that we need to use next week are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
+
+h4. Practical 
+
+Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are still using HTML4.
+
+h2. Want to learn some more?
+
+"w3schools.com":http://www.w3schools.com/ is a free website where you can learn about HTML and many other web related languages.
