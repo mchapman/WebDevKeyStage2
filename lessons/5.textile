@@ -12,3 +12,11 @@ If you want to resize your picture you can use the *width* and *height* attribut
 h4. Practical
 
 Add a kitten 150 pixels high and 300 pixels wide to a page, using jsfiddle or notepad (or both).  What happens if you miss out the / character?
+
+h2. Some more attributes: class and id attributes
+
+Two very important attributes that we need to make best use of CSS are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
+
+h4. Practical 
+
+Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are still using HTML4.
