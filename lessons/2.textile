@@ -61,14 +61,6 @@ h2. Some new elements (and their old equivalents)
 @<header>@ (used to be @<div>@) - a the top section
 @<footer>@ (used to be @<div>@) - a bottom section
 
-h2. class and id attributes
-
-Two very important attributes that we need to use next week are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
-
-h4. Practical 
-
-Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are still using HTML4.
-
 h2. Preview of next HTML lesson (in 3 weeks)
 
 To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
