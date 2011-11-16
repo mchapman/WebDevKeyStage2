@@ -1,5 +1,7 @@
 h1. Making things prettier
 
+This lesson we are going to start making our content a bit prettier.  We do that using a language called CSS - which stands for Cascading Style Sheet.
+
 h4. Demonstration
 
 * In jsfiddle @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
@@ -10,7 +12,10 @@ h4. Practical
 * Play with the colours a bit 
 * Play with the nomalize css.  Think about what is happening.
 
-rules, selectors, declaration groups, declarations
+A CSS stylesheet is made up of one or more *rules*.
+Each rule contains a *selector* (@p@ for example) which tells the browsers which bit of content to apply the style to, and a *declaration group* which specifies the style to be applied.
+A declaration group sits in curly brackets or braces @{}@ and consists of one or more *declarations* such as @color:green;@.
+A declaration is formed of a *property* (such as @color@), a colon @:@, a *value* (such as @green@) and a semi-colon @;@.
 
 h2. Where can we put CSS?
 
@@ -29,9 +34,12 @@ h4. Practical
 h4. The three places we can put our CSS
 # In an external style sheet, which we link to from the head section of our HTML.  For example @<link rel="stylesheet" type="text/css" href="/css/normalize.css">@  this is the preferred method.
 # In an internal style sheet in the head of our HTML.  For example @<style type="text/css">h1 {color: red; background-color: yellow} p {color: green;}</style>@
+# Inline styling, such as @<p style="color:green;">blah blah</p>@.  This mixes presentation with content, and should be avoided except while experimenting.
 
 h4. Discussion
+
 Why is an external stylesheet the best place to put your CSS?  
 * Sharing between pages
 * Separation of concerns no mixing presentation with content
 * Another skill set - can be worked on by someone else
+
