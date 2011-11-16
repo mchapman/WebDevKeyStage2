@@ -1,3 +1,5 @@
+h1. Some more HTML
+
 h2. Pictures
 
 To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
