@@ -1,0 +1,37 @@
+h1. Making things prettier
+
+h4. Demonstration
+
+* In jsfiddle @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
+* @h1 { color: red; background-color: yellow} p {color: green;}@
+
+h4. Practical
+* Do the demonstrations yourself
+* Play with the colours a bit 
+* Play with the nomalize css.  Think about what is happening.
+
+rules, selectors, declaration groups, declarations
+
+h2. Where can we put CSS?
+
+h4. Demonstration
+
+* In jsfiddle make sure Normalized CSS is enabled
+* Using the browser _Inspect Element_ or equivalent, find the iframe where jsfiddle constructs the page.
+* Point out external style sheet
+* Point out internal style sheet
+
+h4. Practical
+
+* Repeat the demonstration and locate the two types of CSS in the iframe
+* Uncheck the normalized css and refresh.  Where is the @<link rel="stylesheet" type="text/css" href="/css/normalize.css">@ gone?
+
+h4. The three places we can put our CSS
+# In an external style sheet, which we link to from the head section of our HTML.  For example @<link rel="stylesheet" type="text/css" href="/css/normalize.css">@  this is the preferred method.
+# In an internal style sheet in the head of our HTML.  For example @<style type="text/css">h1 {color: red; background-color: yellow} p {color: green;}</style>@
+
+h4. Discussion
+Why is an external stylesheet the best place to put your CSS?  
+* Sharing between pages
+* Separation of concerns no mixing presentation with content
+* Another skill set - can be worked on by someone else
