@@ -8,7 +8,7 @@ h4. Demonstration
 
 In jsfiddle enter the following:
 * HTML: @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
-* CSS: @h1 {color: red; background-color: yellow} p {color: green;}@
+* CSS: @h1 {color: red;} p {color: green;}@
 
 h4. Practical
 * Do the demonstration yourself.  Note that the American spelling of colour is used - *color*.
@@ -23,6 +23,31 @@ A CSS stylesheet is made up of one or more *rules*.
 Each rule contains a *selector* (@p@ for example) which tells the browsers which bit of content to apply the style to, and a *declaration group* which specifies the style to be applied.
 A declaration group sits in curly brackets or braces @{}@ and consists of one or more *declarations* such as @color:green;@.
 A declaration is formed of a *property* (such as @color@), a colon @:@, a *value* (such as @green@) and a semi-colon @;@.
+"White space" (spaces, tabs and line endings) don't matter.
+
+There are two common ways to lay out CSS:
+# Concise
+This is best for production sites, since there is slightly less data to be transferred (because you are saving on the white-space)
+@h1 {color: red; background-color: yellow} p {color: green;}@
+# Verbose
+Easier to work on, particularly when working with others.
+@h1 {@
+  @color: red;@
+@}@
+@p {@
+  @color: green;@
+@}@
+
+Unlike with HTML, where the browser doesn't mind the odd missing closing tag etc, CSS has to be _exact_: a missing colon or a mis-placed curly bracket will stop things working.
+
+h2. Background colour
+
+The next property we will use is @background-color@ - it uses the same values as color.
+
+h4. Practical
+
+* Give your heading a background colour
+* If you have time, use "ColorPicker.com":www.colorpicker.com to suggest a nice colour scheme. 
 
 h2. Where can we put CSS?
 
@@ -30,8 +55,12 @@ h4. Demonstration
 
 * In jsfiddle make sure Normalized CSS is enabled
 * Using the browser _Inspect Element_ or equivalent, find the iframe where jsfiddle constructs the page.
-* Point out external style sheet
-* Point out internal style sheet
+* Point out external style sheet 
+@<link rel="stylesheet" type="text/css" href="/css/normalize.css">@
+* Point out internal style sheet 
+@<style type="text/css">@
+@p {color: red}@
+@</style>@
 
 h4. Practical
 
@@ -39,7 +68,7 @@ h4. Practical
 * Uncheck the normalized css and refresh.  Where is the @<link rel="stylesheet" type="text/css" href="/css/normalize.css">@ gone?
 
 h4. The three places we can put our CSS
-# In an external style sheet, which we link to from the head section of our HTML.  For example @<link rel="stylesheet" type="text/css" href="/css/normalize.css">@  this is the preferred method.
+# In an external style sheet, which we link to from the head section of our HTML.  For example @<link rel="stylesheet" type="text/css" href="my_style.css">@  this is the preferred method.
 # In an internal style sheet in the head of our HTML.  For example @<style type="text/css">h1 {color: red; background-color: yellow} p {color: green;}</style>@
 # Inline styling, such as @<p style="color:green;">blah blah</p>@.  This mixes presentation with content, and should be avoided except while experimenting.
 
@@ -52,10 +81,17 @@ Why is an external stylesheet the best place to put your CSS?
 
 In fact there is a fourth place where CSS is specified - by the browser.  Each browser has default styles built in.  This is what we see if we clear the Normalized CSS checkbox in "jsfiddle":jsfiddle.net and clear out the CSS section.
 
+h4. Demonstration
+* Copy the HTML to a .HTML file in the same folder, using notepad.  Add <html>, <head> and <body> tags as appropriate.  Save as "my.html"
+* Open the file in the browser.  Note the absence of styling (apart from browser defaults).
+* Copy the CSS from jsfiddle into a .CSS file in your document folder, using notepad.  Save as "my.css".
+* Refresh the browser - still no styling, as we need to explicitly link the css file.
+* Create a link to the CSS file in the HTML file (an external file sheet)
+@<link rel="stylesheet" type="text/css" href="my.css">@
+* Refresh the browser - now we are cooking with gas.
+
 h4. Practical
 
-* Move your CSS into a .CSS file in your document folder
-* Move your HTML to a .HTML file in the same folder
-* Create a link to the CSS file in the HTML file (an external file sheet)
-* Open the HTML file in the browser
-
+* Repeat the demonstration
+* Modify the .css file
+* Refresh the browser and check that your styling works.
