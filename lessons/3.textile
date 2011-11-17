@@ -64,7 +64,7 @@ h2. Aligning your text
 
 *text-align* is a very useful property that sets the alignment of text.  Values are *center* (note the american spelling), *left*, *right* and *justify*.
 
-h4 Practical
+h4. Practical
 
 Experiment with alignment - you will need quite a lot of text (three lines or more) to see what *justify* means, but it should come out looking like a newspaper or magazine column.
 
@@ -85,6 +85,6 @@ h4. Practical
 
 h2. So how powerful is CSS?
 
-There is a famous site on the internet called "www.csszengarden.com":http://www.csszengarden.com/ which contains an HTML file that is displayed with many different CSS files.  Have a look at them and see what properties you recognise.
+There is a famous site on the internet called "www.csszengarden.com":http://www.csszengarden.com/ which contains an HTML file that is displayed with many different CSS files.  Have a look at some examples, examine the CSS and see what properties you recognise.
 
 You can learn more about CSS at "w3schools":http://www.w3schools.com/css
