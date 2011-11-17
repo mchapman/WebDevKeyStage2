@@ -4,12 +4,13 @@ This lesson we are going to start making our content a bit prettier.  We do that
 
 h4. Demonstration
 
-* In jsfiddle @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
-* @h1 { color: red; background-color: yellow} p {color: green;}@
+In jsfiddle enter the following:
+* HTML: @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
+* CSS: @h1 {color: red; background-color: yellow} p {color: green;}@
 
 h4. Practical
 * Do the demonstrations yourself
-* Play with the colours a bit.  the 17 standard colours are aqua, black, blue, fuchsia, gray, grey, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow.  A complete list, with samples, can be found at "www.w3schools.com/cssref/css_colornames.asp":http://www.w3schools.com/cssref/css_colornames.asp.
+* Play with the colours a bit.  The 17 standard colours are aqua, black, blue, fuchsia, gray, grey, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow.  A complete list, with samples, can be found at "www.w3schools.com/cssref/css_colornames.asp":http://www.w3schools.com/cssref/css_colornames.asp.
 * Play with the nomalize css checkbox.  Think about what is happening.
 
 A CSS stylesheet is made up of one or more *rules*.
