@@ -28,7 +28,7 @@ A declaration is formed of a *property* (such as @color@), a colon @:@, a *value
 There are two common ways to lay out CSS:
 # Concise
 This is best for production sites, since there is slightly less data to be transferred (because you are saving on the white-space)
-@h1 {color: red; background-color: yellow} p {color: green;}@
+@h1 {color: red;} p {color: green;}@
 # Verbose
 Easier to work on, particularly when working with others.
 @h1 {@
