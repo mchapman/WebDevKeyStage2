@@ -1,0 +1,4 @@
+Two major mistakes with this lesson, both of which I will correct in the lesson plan.
+
+1.  Introducing color and background-color at the same time was a mistake.  It left a big chunk of quite dull stuff and I lost their attention.  Given that colour and pictures are what interest them (and buy their attention for a few minutes), I should have introduced background colour later on as a break from the dry stuff.
+2.  It was too much.  By about 40% I think.
