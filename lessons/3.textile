@@ -6,7 +6,7 @@ h2. Colours
 
 h4. Demonstration
 
-In jsfiddle enter the following:
+In "jsfiddle.net":http://www.jsfiddle.net" enter the following:
 * HTML: @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
 * CSS: @h1 {color: red;} p {color: green;}@
 
