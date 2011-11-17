@@ -1,0 +1,36 @@
+h2. Choosing your font
+
+There are several properties that affect the font.  We will look at a couple for now - *font-style* and *font-weight*.  The values for font-style are *normal* and *italic*.  The values for font-weight are *normal*, *bold*, *bolder*, *lighter*.  Find out more about fonts at "w3schools":http://www.w3schools.com/css/css_font.asp
+
+h4. Practical
+
+Apply font styling to your paragraph.
+
+h2. Aligning your text
+
+*text-align* is a very useful property that sets the alignment of text.  Values are *center* (note the american spelling), *left*, *right* and *justify*.
+
+h4. Practical
+
+Experiment with alignment - you will need quite a lot of text (three lines or more) to see what *justify* means, but it should come out looking like a newspaper or magazine column.
+
+h2. Inheriting, Merging and Cascading
+
+A browser builds up the property values for a selector as follows:
+
+* Start with the browser built-in styling for the selector.  If it is not defined for the selector then start with the styling for the selector that this selector inherits from (body is the lowest level).
+* Process the style sheets in the order in which they appear in the head.  If a new declaration matches your selector, merge it in.  If it clashes with an existing declaration, override the old one (cascading).
+* Process the inline style in the same manner.
+
+h4. Practical
+
+* In your external stylesheet set the background-color to black for the p selector
+* Create an internal stylesheet that sets color to white for the p selector.  Refresh the browser - you should see white text on a black background, as the properties have been merged.
+* In your HTML file set up an inline style for a p element that sets the color to yellow.  Refresh the browser - you should see yellow text on a black background, as it has 'cascaded' on to of the white.
+* In your HTML file modify your inline style so that is says <p style="color:yellow; color:aqua">.  Refresh the browser - you should see aqua text on a black background, as the aqua was the last value to be read, and it has 'cascaded' on top of the yellow.
+
+h2. So how powerful is CSS?
+
+There is a famous site on the internet called "www.csszengarden.com":http://www.csszengarden.com/ which contains an HTML file that is displayed with many different CSS files.  Have a look at some examples, examine the CSS and see what properties you recognise.
+
+You can learn more about CSS at "w3schools":http://www.w3schools.com/css
