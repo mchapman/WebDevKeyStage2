@@ -2,6 +2,8 @@ h1. Making things prettier
 
 This lesson we are going to start making our content a bit prettier.  We do that using a language called CSS - which stands for Cascading Style Sheet.
 
+h2. Colours
+
 h4. Demonstration
 
 In jsfiddle enter the following:
@@ -12,6 +14,10 @@ h4. Practical
 * Do the demonstration yourself.  Note that the American spelling of colour is used - *color*.
 * Play with the colours a bit.  The 17 standard colours are aqua, black, blue, fuchsia, gray, grey, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow.  A complete list, with samples, can be found at "www.w3schools.com/cssref/css_colornames.asp":http://www.w3schools.com/cssref/css_colornames.asp.
 * Play with the nomalize css checkbox.  Think about what is happening.
+
+Colours can be expressed in other ways, such as three numbers between 0 and 255, representing how much Red, Green and Blue there is in the colour.  For example @color: rgb(242,150,9)@ is a kind of orangey brown.  You will also see @color: #f29609@ which is the same three numbers expressed in base 16, one after the other.  The "ColorPicker.com":www.colorpicker.com site is a good place to learn about colours and which colours work well together.
+
+h2. The syntax of CSS
 
 A CSS stylesheet is made up of one or more *rules*.
 Each rule contains a *selector* (@p@ for example) which tells the browsers which bit of content to apply the style to, and a *declaration group* which specifies the style to be applied.
