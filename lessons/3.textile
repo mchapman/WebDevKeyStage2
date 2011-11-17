@@ -26,10 +26,11 @@ A declaration is formed of a *property* (such as @color@), a colon @:@, a *value
 "White space" (spaces, tabs and line endings) don't matter.
 
 There are two common ways to lay out CSS:
-# Concise
+# Concise - one line per rule
 This is best for production sites, since there is slightly less data to be transferred (because you are saving on the white-space)
-@h1 {color: red;} p {color: green;}@
-# Verbose
+@h1{color:red;}@
+@p{color:green;}@
+# Verbose - one line per declaration
 Easier to work on, particularly when working with others.
 @h1 {@
   @color: red;@
