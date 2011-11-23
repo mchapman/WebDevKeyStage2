@@ -1,6 +1,6 @@
-h1. An introduction to Javascript
+h1. An Introduction to Javascript
 
-Javascript is the most common language used on the web.  Almost every web site you visit has some javascript.  All browsers can run javascript programs, but there are differences between browsers: sometimes you will find that code that works in one browser will not work in another (so if you are writing a web site for the public you should test you should test your code in all common browsers.
+Javascript is the most common language used on the web.  Almost every web site you visit has some javascript.  All browsers can run javascript programs, but there are differences between browsers: sometimes you will find that code that works in one browser will not work in another (so if you are writing a web site for the public you should test your code in all common browsers.
 
 h2. Variables, Strings, Numbers and Booleans
 
