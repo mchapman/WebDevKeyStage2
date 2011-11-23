@@ -1,0 +1,102 @@
+h1. An introduction to Javascript
+
+Javascript is the most common language used on the web.  Almost every web site you visit has some javascript.  All browsers can run javascript programs, but there are differences between browsers: sometimes you will find that code that works in one browser will not work in another (so if you are writing a web site for the public you should test you should test your code in all common browsers.
+
+h2. Variables, Strings, Numbers and Booleans
+
+A program needs to store values.  For example when you log on to a website you are often asked for your name, and it is displayed somewhere on the page.  The name needs to be stored somewhere - a *variable*.  Variables should be declared before they are used (though different implementations of Javascript are more or less forgiving about this).
+
+@var myName = "John";@
+
+There are 5 elements to this line:
+@var@ this tells Javascript that you are declaring a variable
+@myName@ this is the name you are giving to the variable
+@=@ this tells Javascript that you are about to assign a value to the variable
+@"John"@ is the value being assigned to the variable.  John is a *string* (text) and is enclosed in quotes (to distinguish it from any variables called John)
+@;@ the semi colon tells Javascript that you have reached the end of this instruction.  It can be omitted in Chrome, but you should get into the habit of using it as other browsers are les forgiving.
+
+h4. Demonstration
+
+In Chrome console declare some variables.  Explain the number, string and boolean (true, false) data types.
+
+h4. Practical
+
+Repeat the demonstration.
+
+h2. Displaying values
+
+Once you have a variable, you need to be able to display it.  We will look at four ways we might do this:
+
+# @console.log()@ is useful for seeing what the value of a variable is when you are developing, but not for showing it to users
+# @alert()@ puts a string up in a dialog box
+# @confirm()@ puts a string up in a dialog box and then returns a boolean value
+# @document.write()@ which is best seen in jsfiddle
+
+We can output literals ("John") or variable (myName).
+
+h4. Demonstration
+
+Demonstrate each of these four methods of displaying a variable.
+
+h4. Practical
+
+Assign a string to a variable and display it in whatever way you like (do more if you have time).
+
+h2. Operators
+
+You can use the console like a calculator by typing in sums such as @2 + 4@.  There are other mathematical operators you can use:
+* @-@ to subtract
+* @*@ to muliply
+* @/@ to divide
+* @%@ to calculate the remainder when you divide (so 4%3 is 1)
+
+h4. Practical
+
+* Do some sums!
+* What happens when you add strings, such as "Hello" + "World"?  This is called concatenation
+* What happens when you use other operators on strings?  NaN means "Not a Number"
+
+h2. Getting repetitive
+
+A very common need is to get the computer to do something more than once.  Rather than write out the instructions several times, we use a programming construct to get that to happen.  There are a few constructs that can help us to do that - today we will learn about the *for loop*, which is normally used when you know how many times you want to repeat an action.  The syntax is:
+
+@for (variable=startvalue;variable<=endvalue;variable=variable+increment) {@
+_code to be executed_
+@}@
+
+For example:
+@for (i=0; i<5; i=i+1) {@
+@console.log("This is line " + i)@
+@}@
+
+Note that this can be shortened to @for (i=0; i<5; i++)@
+
+h2. Making a decision
+
+Another very common need is to decide which bit of code needs to be run depending on whether some condition is satisfied.
+
+if (condition) { }
+if (condition) { } else { }
+if (condition) { } else if (condition2) { } else { }
+
+examples
+@if (i > 3) { console.log("i is quite big") }@
+@if (i > 3) { console.log("i is quite big") } else { console.log("i is small") }@
+@if (i > 4) { console.log("i is quite big") } else if (i > 2) { console.log("i is medium") } else { console.log("i is small") }@
+
+A condition is an expression that results in a boolean, so @if (true)@ will always execute.  Normally a comparison operator is used
+* @>@ is greater than. 7 > 4 is true
+* @<@ is less than. 7 , 4 is false
+* @>=@ is greater than or equal to.  7 >= 7 is true
+* @<=@ is less than or equal to. 7 <= 7 is true
+* @===@ is equal to.  7 === 7 is true
+* @!==@ is not equal to.  7 !== 7 is false
+
+h2. Practicals (do in whatever order, as many as you can find time for):
+
+1 Print out the first few even numbers in the console
+2 Play fizzbuzz to 50 in jsfiddle.  Fizzbuzz is a counting game.  Just print the number.  If it is divisible by 3, then say "fizz" instead of the number. If it is divisible by 5, then say "buzz" instead of the number.  If is is divisible by 3 and 5 then say "fizzbuzz".
+3 Print out the prime numbers up to 50 in jsfiddle.  A number is prime if it can only be divided by itself and 1.
+
+There are many resources on the net to help with learning javascript - "www.w3schools.com/js":http://www.w3schools.com/js is a good source of information, and "ecademy.com":http://www.ecademy.com is a fun place to practice.
+
