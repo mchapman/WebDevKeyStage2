@@ -1,0 +1,3 @@
+I am getting better at pace judgement, and had 5 minutes at the end for them to try an exercise.  This wasn't enough, but it could have been longer if I had been stricter with them when they started playing with large numbers in the loops - we spent a good few minutes with me trying to explain to a few of them that they would die before they had clicked OK on 1000000000000000000000 alert boxes (I didn't actually do the sums - sorry if I was being alarmist).
+
+I think the lesson contained pretty much a minimum useful feature set of javascript and to have left any of it out would have been a mistake.  As it is they can go away and write useful (if inelegant) code.  And I suspect at least one of them might try.
