@@ -1,24 +1,13 @@
-h1. Some more HTML
+As this is the last lesson of the term we are going to deviate from the plan and do revision:
 
-h2. Pictures
+YRS2012 - 1st week of August
+HTML revision.  title, h1..h6, p, i, b, em, strong, mark, article, section, header, footer, img
+CSS Revision. color, background-color, inline, internal and external style sheets
+Javascript Revision. var, document.write(), console.log(), alert(), confirm(), operators, for loops, if [else if] [else]
 
-To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
-@<img src="http://www.placekitten.com/200/300" />@
-*src* is short for _source_ - where the picture comes from.  
+Practical (using notepad - the network is too slow to use jsfiddle.net)
+1.  Hackers: Using Javascript create a page on the fly that lists out the times tables from 1 to 12.
+2.  Designers: Design a Christmas greeting web page using HTML and CSS (in an external syle sheet if you can).  You can use <marquee> if you like.
 
-This picture comes from a site that generates placeholder pictures of whatever size you want (the size is specified between the slashes) for designers who need a picture to work on their layout but don't yet have the real picture.  There are other sites like this - "lipsum.com":http://www.lipsum.com/ generates latin holder text and if you don't like kittens you can get other pictures from "lorempixel.com":http://lorempixel.com/ which lets you choose your subject.
 
-If you want to resize your picture you can use the *width* and *height* attributes.  You are always meant to include an *alt* (for _alternative_) attribute in case the browser is incapable of displaying pictures, or for blind users.
-@<img src="http://www.placekitten.com/200/300" width="100" height="400" alt="A cute kitten - squashed!" />@
 
-h4. Practical
-
-Add a kitten 150 pixels high and 300 pixels wide to a page, using jsfiddle or notepad (or both).  What happens if you miss out the / character?
-
-h2. Some more attributes: class and id attributes
-
-Two very important attributes that we need to make best use of CSS are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
-
-h4. Practical 
-
-Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are still using HTML4.

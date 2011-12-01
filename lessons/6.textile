@@ -1,36 +1,24 @@
-h2. Choosing your font
+h1. Some more HTML
 
-There are several properties that affect the font.  We will look at a couple for now - *font-style* and *font-weight*.  The values for font-style are *normal* and *italic*.  The values for font-weight are *normal*, *bold*, *bolder*, *lighter*.  Find out more about fonts at "w3schools":http://www.w3schools.com/css/css_font.asp
+h2. Pictures
 
-h4. Practical
+To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
+@<img src="http://www.placekitten.com/200/300" />@
+*src* is short for _source_ - where the picture comes from.  
 
-Apply font styling to your paragraph.
+This picture comes from a site that generates placeholder pictures of whatever size you want (the size is specified between the slashes) for designers who need a picture to work on their layout but don't yet have the real picture.  There are other sites like this - "lipsum.com":http://www.lipsum.com/ generates latin holder text and if you don't like kittens you can get other pictures from "lorempixel.com":http://lorempixel.com/ which lets you choose your subject.
 
-h2. Aligning your text
-
-*text-align* is a very useful property that sets the alignment of text.  Values are *center* (note the american spelling), *left*, *right* and *justify*.
-
-h4. Practical
-
-Experiment with alignment - you will need quite a lot of text (three lines or more) to see what *justify* means, but it should come out looking like a newspaper or magazine column.
-
-h2. Inheriting, Merging and Cascading
-
-A browser builds up the property values for a selector as follows:
-
-* Start with the browser built-in styling for the selector.  If it is not defined for the selector then start with the styling for the selector that this selector inherits from (body is the lowest level).
-* Process the style sheets in the order in which they appear in the head.  If a new declaration matches your selector, merge it in.  If it clashes with an existing declaration, override the old one (cascading).
-* Process the inline style in the same manner.
+If you want to resize your picture you can use the *width* and *height* attributes.  You are always meant to include an *alt* (for _alternative_) attribute in case the browser is incapable of displaying pictures, or for blind users.
+@<img src="http://www.placekitten.com/200/300" width="100" height="400" alt="A cute kitten - squashed!" />@
 
 h4. Practical
 
-* In your external stylesheet set the background-color to black for the p selector
-* Create an internal stylesheet that sets color to white for the p selector.  Refresh the browser - you should see white text on a black background, as the properties have been merged.
-* In your HTML file set up an inline style for a p element that sets the color to yellow.  Refresh the browser - you should see yellow text on a black background, as it has 'cascaded' on to of the white.
-* In your HTML file modify your inline style so that is says <p style="color:yellow; color:aqua">.  Refresh the browser - you should see aqua text on a black background, as the aqua was the last value to be read, and it has 'cascaded' on top of the yellow.
+Add a kitten 150 pixels high and 300 pixels wide to a page, using jsfiddle or notepad (or both).  What happens if you miss out the / character?
 
-h2. So how powerful is CSS?
+h2. Some more attributes: class and id attributes
 
-There is a famous site on the internet called "www.csszengarden.com":http://www.csszengarden.com/ which contains an HTML file that is displayed with many different CSS files.  Have a look at some examples, examine the CSS and see what properties you recognise.
+Two very important attributes that we need to make best use of CSS are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
 
-You can learn more about CSS at "w3schools":http://www.w3schools.com/css
+h4. Practical 
+
+Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are still using HTML4.
