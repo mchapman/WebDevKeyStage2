@@ -1,13 +1,70 @@
-As this is the last lesson of the term we are going to deviate from the plan and do revision:
+Announcement: YRS2012 - 1st week of August
 
-YRS2012 - 1st week of August
-HTML revision.  title, h1..h6, p, i, b, em, strong, mark, article, section, header, footer, img
-CSS Revision. color, background-color, inline, internal and external style sheets
-Javascript Revision. var, document.write(), console.log(), alert(), confirm(), operators, for loops, if [else if] [else]
+h1. Revision and long practical
 
-Practical (using notepad - the network is too slow to use jsfiddle.net)
-1.  Hackers: Using Javascript create a page on the fly that lists out the times tables from 1 to 12.
-2.  Designers: Design a Christmas greeting web page using HTML and CSS (in an external syle sheet if you can).  You can use <marquee> if you like.
+As this is (unexpectedly) the last lesson of the term we are going to deviate from the plan and do quick revision of all we have done so far then spend the rest of the lesson doing a long practical, with me wandering around helping out.
 
+h2. HTML revision.  
 
+HyperText Markup Language.  Content and structure.
+
+@<title>@
+@<h1>@ .. @<h6>@
+@<p>@
+@<i>@
+@<b>@
+@<em>@
+@<strong>@
+@<mark>@
+@<article>@
+@<section>@
+@<header>@
+@<footer>@
+@<img src="http://www.st-marks.e-sussex.sch.uk/Images/St%20Marks%20Logo.gif>@
+
+h2. CSS Revision
+
+Cascading Style Sheets.  Styling - appearance.
+
+selector { property : value ; [property : value ;] }
+
+h4. Properties
+
+@color@
+@background-color@
+
+h4. Where you put your CSS 
+
+* inline @<p style="color:red;">Hello World</p>@
+* internal style sheets  @<style type="text/css">p{color:red;}</style>@
+* external style sheets  @<link rel="stylesheet" type="text/css" href="mycss.css">@
+
+h2. Javascript Revision
+
+@var myName = "John";@
+Output: @document.write()@, @console.log()@, @alert()@, @confirm()@
+Operators: @+*/-%@
+Repetition: @for(i=0;i<5;i++) { }@
+Comparison operators: @>@, @<@, @>=@, @<=@, @===@, @!==@
+Branching: @if() { }@ [@else if() { }@] [@else { }@]
+
+h2. Practical 
+
+Use notepad - the network is too slow to use jsfiddle.net
+
+h4.  Hackers
+
+Using Javascript create a page on the fly that lists out the times tables from 1 to 12.  You can put the script in your html as follows:
+
+@<html>@
+@<body>@
+@<script type="text/javascript">@
+....your code goes here...
+@</script>@
+@</body>@
+@</html>@
+
+h4.  Designers
+
+Design a Christmas greeting web page using HTML and CSS in an external syle sheet.  You can use @<marquee>@ if you like, and anything you can find at "w3schools.com/html":http://www.w3schools.com/html and "w3schools.com/css":http://www.w3schools.com/css
 
