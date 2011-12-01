@@ -1,0 +1,7 @@
+Attendance had dropped somewhat, with only 5 today (from a peak of 9 I think).  Some absences were due to domestic arrangements and sickness, but some must have been elective (though nobody admitted to it - thumb screws were not used in the inquisition).
+
+I found out a day before the club that this was to be the last of the term (I had thought there were going to be 3 more, but there is a carol service etc).  Consequently rather than the intended second HTML/CSS/JS series I decided to do a consolidating revision day.
+
+After the usual 10 minutes messing around at the beginning and whizzing through the revision there were 40 minutes left to do the practical.  Everyone elected to do the design (actually one said he was going to do the coding but changed his mind almost immediately).  By the end of the lesson minutes all of them had some valid HTML that included an image and some styling appplied in an external stylesheet.  I did much more typing that I would have liked, having realised that if I explained the next stage and made a tour of the room nothing much would have happened by the time I got back to them and we would end up without a result.
+
+Once they had two notepad instances (HTML & CSS) and a browser window and had got practiced at the click ^s click ^s click F5 sequence to get very quick iterations on screen they started to enjoy it quite a lot, and no-one wanted to leave until their parents came in to physically remove them.
