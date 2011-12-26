@@ -6,4 +6,6 @@ I am not a teacher, and not even a good web developer, so feel free to comment /
 
 Mark
 
-I have just discoevered a resource for slightly older groups of kids also covereing web development at "blackheathcoding.posterous.com":http://blackheathcoding.posterous.com/
+Other resources I have discovered:
+http://fingswotidun.com/javascript/ aimed at 9-11 year olds
+For slightly older groups of kids also covering web development at "blackheathcoding.posterous.com":http://blackheathcoding.posterous.com/
