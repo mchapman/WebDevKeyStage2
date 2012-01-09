@@ -4,8 +4,7 @@ h2. Links
 
 Links are what ties the web together. The are often blue, underlined text which when clicked on takes you somewhere else. However they can be almost any element. They could be an image for example. Links are created with an anchor tag; let's take a look at one.
 
-1
-<a href="http://www.example.com/my-page.html">click me</a>
+@<a href="http://www.example.com/my-page.html">click me</a>@
 The element name is a (short for anchor) and it has one required attribute, href. Then in this case it has the text 'click me' and then the closing a tag. The most important part of the anchor tag is the href short for hypertext reference. This attribute describes where the link will take you when you click on it. In our example it will take you to http://www.example.com/my-page.html. This is a URL, we've seen them before when using the img tag.
 
 Understanding URLs
