@@ -48,7 +48,7 @@ The next property we will use is @background-color@ - it uses the same values as
 h4. Practical
 
 * Give your heading a background colour
-* If you have time, use "ColorPicker.com":www.colorpicker.com to suggest a nice colour scheme. 
+* If you have time, use "ColorPicker.com":http://www.colorpicker.com to suggest a nice colour scheme. 
 
 h2. Where can we put CSS?
 
