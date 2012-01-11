@@ -8,6 +8,6 @@ Mark
 
 Other resources I have discovered:
 "http://fingswotidun.com/javascript/":http://fingswotidun.com/javascript/ aimed at 9-11 year olds
-For slightly older groups of kids also covering web development at "blackheathcoding.posterous.com":http://blackheathcoding.posterous.com/
+For slightly older groups of kids also covering web development at "blackheathcoding.posterous.com":http://blackheathcoding.posterous.com/ (who kindly allowed me to use their material about links for lesson 6).
 "Open University Javascript as first language course":http://www.open.ac.uk/computing/m150/courseoverview.html
 "John Resig blog post about teaching Javascript as a first language":http://ejohn.org/blog/javascript-as-a-first-language
