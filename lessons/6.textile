@@ -10,60 +10,36 @@ The element name is a (short for anchor) and it has one required attribute, href
 
 h3. Understanding URLs
 
-URLs are very important so let's break them down and take a closer look at this one, http://www.example.com/my-page.html. The three main sections of this URL are:
+URLs are very important so let's break them down and take a closer look at this one, http://www.example.com/my-page.html. This URL is divided into three main sections, each of which tells the browser all tell your web browser different something about how or where to find the information described by the URL. 
 
-* the protocol (http://)
-* the domain (www.example.com)
-* the path (/my-page.html)
-
-They all tell your web browser different things about where to find the information described by this URL. 
-
-We discussed protocols in the very first lesson.  The protocol (http://) tells the browser how the computers should talk to each other, what language if you like.  When dealing with the web this is almost always going to be http. 
-
-The domain (www.example.com) tells the browser where in the internet to find the information, this domain name gets translated into an IP address which is a little bit like a street address. 
-
-The path (/my-page.html) is sent by the browser to the domain using the protocol and that specific web page (or resource) is sent back to the browser.
+* The protocol @http://@ tells the browser how the computers should talk to each other, what language if you like.  When dealing with the web this is almost always going to be http or https (for a more secure website).
+* The domain @www.example.com@ tells the browser where in the internet to find the information, this domain name gets translated into an IP address which is a little bit like a street address. 
+* The path @/my-page.html@ is sent by the browser to the domain using the protocol and that specific web page (or resource) is sent back to the browser.
 
 If you're creating a link to another page on the same domain you can leave the protocol and domain off and just add the path. This is called a relative link rather than an absolute link because it is relative to the current location.
 
-h3 Understanding Relative Links
+h3. Understanding Relative Links
 
 Relative links themselves can be split down into two groups. If they start with a slash they point to the root of the domain, if they do not they point to the current location. I'm sure that doesn't make much sense yet so let's take a look at some examples.
 
-Let us say we are on the page 
+Let us say we are on the page @http://www.example.com/foo/bar/monkey.html@ and you have a link to @/over/there.html@.  It would take us to @http://www.example.com/over/there.html@.
 
-@http://www.example.com/foo/bar/monkey.html@
-
-If on that page we had a link to 
-
-@/over/there.html@
-
-it would take us to 
-
-@http://www.example.com/over/there.html@
-
-However, if we had a link to 
-
-@over/there.html@
-
-(without the leading slash) it would take us to 
-
-@http://example.com/foo/bar/over/there.html@
+However, if we had a link to @over/there.html@ (without the leading slash) it would take us to @http://example.com/foo/bar/over/there.html@.
 
 What has happened in the second case is that the browser has noticed that we're in /foo/bar/ and has put our path on the end of that.
 
-h4 Exercises
+h4. Exercises
 
-* In the URL http://www.example.com/over/here.html which part is the domain?
-* In the URL http://www.example.com/over/here.html which part is the protocol?
-* In the URL http://www.example.com/over/here.html which part is the path?
-* If I'm on the page http://www.example.com/over/here.html and a click a link to /over/there.html what URL will I be on?
-* If I'm on the page http://www.example.com/over/here.html and a click a link to http://www.another.com/hello.html what URL will I be on?
-* If I'm on the page http://www.example.com/over/here.html and a click a link to hello.html what URL will I be on?
+# In the URL http://www.example.com/over/here.html which part is the domain?
+# In the URL http://www.example.com/over/here.html which part is the protocol?
+# In the URL http://www.example.com/over/here.html which part is the path?
+# If I'm on the page http://www.example.com/over/here.html and a click a link to /over/there.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and a click a link to http://www.another.com/hello.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and a click a link to hello.html what URL will I be on?
 
 h2. Some more attributes: class and id attributes
 
-Two very important attributes that we need to make best use of CSS are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.
+Two very important attributes that we need to make best use of CSS are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.  We will see how they are used next lesson.
 
 h4. Practical 
 
@@ -104,14 +80,12 @@ Unordered list @<ul>@
 
 Each item in the list will be in a *list item* element @<li>@, so we end up with something like:
 <pre>
-<code>
- <ol>
-   <li>First point</li>
-   <li>Second point</li>
-   <li>Final point</li>
-  </ol>
-</code>
-</pre>
+<code><ol>
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Final point</li></ol>
+</code></pre>
+(The @</ol>@ would be better placed on the next line down, but an apparent bug in the renderer stops me doing that).
 
 As with virtually all HTML elements there are additional attributes - see the relevant section of "W3Schools":http://www.w3schools.com/html for more detail.
 
@@ -125,24 +99,18 @@ h2. Tables
 
 Another way we could set up our wish list is to use a table.  Tables are used to list things that have the same properties.  In our case we could have a table that had a column with an image of the present, a column describing why we wanted it and a column with the approximate price.
 
-Tables use the @<table>@ element.  Every row needs a table row element - @<tr>@, and every *cell* within the row needs a table data element @<td>.  It is very common to use a border attribute with your table element such as 
+Tables use the @<table>@ element.  Every row needs a table row element - @<tr>@, and every *cell* within the row needs a table data element @<td>@.  It is very common to use a border attribute with your table element such as @border="1"@.
 
 There is a lot that you can do with tables such as have cells spanning columns, headings etc (see the relevant section of "W3Schools":http://www.w3schools.com/html for more detail) but one thing you should never do is use tables to lay out html content that is not a list of similar data elements - that is the job of CSS.
-
 <pre>
-<code>
-  <table border="1">
+<code><table border="1">
     <tr>
       <td>row 1, cell 1</td>
-      <td>row 1, cell 2</td>
-    </tr>
+      <td>row 1, cell 2</td></tr>
     <tr>
       <td>row 2, cell 1</td>
-      <td>row 2, cell 2</td>
-    </tr>
-  </table>
-</code>
-</pre>
+      <td>row 2, cell 2</td></tr></table>
+</code></pre>
 
 h4. Practical
 
