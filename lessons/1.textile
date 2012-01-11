@@ -18,9 +18,9 @@ Define it: A web browser is a software application for retrieving, presentin
 
 The web started to gain popularity in 1993 when the first popular browser, Mosaic, was written in an American university by a team led by "Marc Andreessen":http://www.facebook.com/pages/Marc-Andreessen/109250945767519.  Mosaic was popular because it allowed graphics to be shown in web pages. 
 
-Examples of modern browsers – desktops, mobiles, games devices etc
+Examples of modern browsers – desktops, mobiles, games devices, TVs etc
 
-Mosaic (which soon changed it's name to Netscape) pushed along the development of the internet in the early 90s, and was to a large extent responsible for introducing the two languages that, along with HTML you need to know about to understand the web.
+Mosaic (which soon changed it's name to Netscape) pushed along the development of the internet in the early 90s, and was to a large extent responsible for introducing the two languages that, along with HTML, you need to know about to understand the web.
 
 h2. Presentation - CSS
 

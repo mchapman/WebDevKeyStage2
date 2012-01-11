@@ -22,7 +22,7 @@ h4. Practical:
 
 h2. Experimenting with jsfiddle.net
 
-If we use the website jsfiddle.net then we get two big advantages: 
+If we use the website "jsfiddle.net":http://www.jsfiddle.net then we get two big advantages: 
 * We get to see what we are working on at the same time as the HTML
 * We get syntax highlighting
 
