@@ -98,5 +98,5 @@ h2. Practicals (do in whatever order, as many as you can find time for):
 2 Play fizzbuzz to 50 in jsfiddle.  Fizzbuzz is a counting game.  Just print the number.  If it is divisible by 3, then say "fizz" instead of the number. If it is divisible by 5, then say "buzz" instead of the number.  If is is divisible by 3 and 5 then say "fizzbuzz".
 3 Print out the prime numbers up to 50 in jsfiddle.  A number is prime if it can only be divided by itself and 1.
 
-There are many resources on the net to help with learning javascript - "www.w3schools.com/js":http://www.w3schools.com/js is a good source of information, and "ecademy.com":http://www.ecademy.com is a fun place to practice.
+There are many resources on the net to help with learning javascript - "www.w3schools.com/js":http://www.w3schools.com/js is a good source of information, and "codecademy.com":http://www.codecademy.com is a fun place to practice.
 
