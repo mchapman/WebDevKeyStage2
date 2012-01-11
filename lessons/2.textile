@@ -61,7 +61,7 @@ h2. Some new elements (and their old equivalents)
 @<header>@ (used to be @<div>@) - a the top section
 @<footer>@ (used to be @<div>@) - a bottom section
 
-h2. Preview of next HTML lesson (in 3 weeks)
+h2. Preview of next HTML lesson (4 lessons time)
 
 To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
 @<img src="http://www.placekitten.com/200/300" />@

@@ -1,4 +1,4 @@
-h1. Some more HTML
+h1. Some more HTML ---- links, images, tables, lists, class and id
 
 h2. Pictures
 
