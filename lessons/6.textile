@@ -33,9 +33,9 @@ h4. Exercises
 # In the URL http://www.example.com/over/here.html which part is the domain?
 # In the URL http://www.example.com/over/here.html which part is the protocol?
 # In the URL http://www.example.com/over/here.html which part is the path?
-# If I'm on the page http://www.example.com/over/here.html and a click a link to /over/there.html what URL will I be on?
-# If I'm on the page http://www.example.com/over/here.html and a click a link to http://www.another.com/hello.html what URL will I be on?
-# If I'm on the page http://www.example.com/over/here.html and a click a link to hello.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and I click a link to /over/there.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and I click a link to http://www.another.com/hello.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and I click a link to hello.html what URL will I be on?
 
 h2. Some more attributes: class and id attributes
 
@@ -95,27 +95,4 @@ h4. Practical
 * Make an unordered list of them in "JSFiddle":http://www.jsfiddle.net
 * Now rearrange them in order, starting with which you would like most, and convert the list into an ordered list
  
-h2. Tables 
-
-Another way we could set up our wish list is to use a table.  Tables are used to list things that have the same properties.  In our case we could have a table that had a column with an image of the present, a column describing why we wanted it and a column with the approximate price.
-
-Tables use the @<table>@ element.  Every row needs a table row element - @<tr>@, and every *cell* within the row needs a table data element @<td>@.  It is very common to use a border attribute with your table element such as @border="1"@.
-
-There is a lot that you can do with tables such as have cells spanning columns, headings etc (see the relevant section of "W3Schools":http://www.w3schools.com/html for more detail) but one thing you should never do is use tables to lay out html content that is not a list of similar data elements - that is the job of CSS.
-<pre>
-<code><table border="1">
-    <tr>
-      <td>row 1, cell 1</td>
-      <td>row 1, cell 2</td></tr>
-    <tr>
-      <td>row 2, cell 1</td>
-      <td>row 2, cell 2</td></tr></table>
-</code></pre>
-
-h4. Practical
-
-* Create a 2 column, 3 row table using the presents from the previous section, with the second column being an approximate price.
-* See what the table looks like without borders, and with different border values.
-* If you have time, find out at "W3Schools":http://www.w3schools.com/html/html_tables.asp how to add a header to your table and do so.
-
 
