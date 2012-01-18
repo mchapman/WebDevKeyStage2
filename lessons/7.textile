@@ -1,10 +1,24 @@
-h2. Choosing your font
+h1. Some more CSS
 
-There are several properties that affect the font.  We will look at a couple for now - *font-style* and *font-weight*.  The values for font-style are *normal* and *italic*.  The values for font-weight are *normal*, *bold*, *bolder*, *lighter*.  Find out more about fonts at "w3schools":http://www.w3schools.com/css/css_font.asp
+Before we start in learning more CSS we will take a minute to revise what we learnt in the first CSS lesson:
+
+A CSS stylesheet is made up of one or more *rules*.  Each rule contains a *selector* (@p@ for example) which tells the browsers which bit of content to apply the style to, and a *declaration group* which specifies the style to be applied.
+A declaration group sits in curly brackets or braces @{}@ and consists of one or more *declarations* such as @color:green;@.
+A declaration is formed of a *property* (such as @color@ or @background-color@), a colon @:@, a *value* (such as @green@) and a semi-colon @;@.
+"White space" (spaces, tabs and line endings) don't matter.
+
+We can put our CSS in three places:
+# In an external style sheet, which we link to from the head section of our HTML.  For example @<link rel="stylesheet" type="text/css" href="my_style.css">@  this is the preferred method.
+# In an internal style sheet in the head of our HTML.  For example @<style type="text/css">h1 {color: red; background-color: yellow} p {color: green;}</style>@
+# Inline styling, such as @<p style="color:green;">blah blah</p>@.  This mixes presentation with content, and should be avoided except while experimenting.
+
+h2. Some more properties - Fonts
+
+There are several properties that affect the font and typeface.  We will look at a couple for now - *font-style* and *font-weight*.  The values for font-style are *normal* and *italic*.  The values for font-weight are *normal*, *bold*, *bolder*, *lighter*.  Find out more about fonts at "w3schools":http://www.w3schools.com/css/css_font.asp
 
 h4. Practical
 
-Apply font styling to your paragraph.
+Set up and external style sheet and html document with a heading and a paragraph of text (which you can get from  "lipsum.com":http://www.lipsum.com/ to be quick). Look at the last section of lesson 3 to refresh your memory.  Apply font appropriate font styling to your document.
 
 h2. Aligning your text
 
@@ -28,6 +42,38 @@ h4. Practical
 * Create an internal stylesheet that sets color to white for the p selector.  Refresh the browser - you should see white text on a black background, as the properties have been merged.
 * In your HTML file set up an inline style for a p element that sets the color to yellow.  Refresh the browser - you should see yellow text on a black background, as it has 'cascaded' on to of the white.
 * In your HTML file modify your inline style so that is says <p style="color:yellow; color:aqua">.  Refresh the browser - you should see aqua text on a black background, as the aqua was the last value to be read, and it has 'cascaded' on top of the yellow.
+
+h2. Backgrounds - styling with pictures
+
+Last week we learnt about the HTML @<img>@ tag, which can be used to put a picture on the screen.  Remember though that we want our HTML documents only to contain content, not style, so if we want a picture _just_ for prettiness, then we don't want it in our HTML.  We _would_ use the @<img>@ tag if the picture was part of the content of the document, such as a picture of a present on your wish list in the project, but if we just wanted a fancy background for our page we would use the @background-image@ paoperty.
+
+h4. Practical
+
+* Add the line @body { background-image : url(xxxxxx) ; }@ to your stylesheet and refresh the browser
+* Add the declaration @background-repeat : repeat@ and refresh again
+
+h2. Class and ID
+
+Last week we looked at adding these attributes could be used with an HTML tag - now we will see how we can make use of this.  You create a CSS selector for a class by prefixing the class name with a dot (.) which you will often see called 'period' in documentation as that is how americans say it.  You create a selector for an ID by prefixing the ID name with a hash (#) which the americans sometimes call a pound sign (I have no idea why).
+
+h4. Practical
+
+* Add two more paragraphs to your document, one with class "bold" and one with id "italic" 
+* Add some CSS to make the paragraph with the bold class appear bold
+* Add some CSS to make the paragraph with the id italic appear (yes, you guessed it) italic
+
+h2. Link States
+
+Have you noticed how links sometimes change their appearance when you put your mouse over them or when you have visited them?  You can do this with the pseudo classes 
+* :link - an unvisited link
+* :visited - a visited link
+* :hover - an element when you mouse over it
+* :active - an element in clicked state
+If you specify styles for more than one they must be in that order).
+
+h4. Practical
+
+Add a link to your favoutite website and style the link so that it appears with an orange background when it has been visited 
 
 h2. So how powerful is CSS?
 
