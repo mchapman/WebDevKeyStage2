@@ -41,16 +41,16 @@ There are many methods we can call on the context.  The first one we are going t
 
 which draws a filled in rectangle on our canvas context with top left corner 50,50, width 150 pixels and height 100 pixels.  It fills the rectangle with whatever the current fill colour is (by default black).  The syntax is object.method(parameters) where
 
-* Object is ctx – an object of class context, returned by getContext()
-* The method (something an object can do) is fillRect
+* Object is @ctx@ – an object of class context, returned by getContext()
+* The method (something an object can do) is @fillRect@
 * The parameters are the values (in this case the coordinates that define where we want our rectangle) we need to pass to the method so it knows what to do.
 
 To use the method we need to put the following lines in our HTML header:
 
 @<script>@
 @function init() {@
-@  var ctx =document.getElementById("canvas").getContext('2d');@
-@  ctx.fillRect(50,50,150,100);@
+@var ctx =document.getElementById("canvas").getContext('2d');@
+@ctx.fillRect(50,50,150,100);@
 @}@
 @</script>@
 
