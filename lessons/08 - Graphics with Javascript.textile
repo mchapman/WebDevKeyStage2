@@ -54,7 +54,7 @@ To use the method we need to put the following lines in our HTML header:
 @}@
 @</script>@
 
-A function is just a collection of lines of code that are run together.  Our function has a name - @init@ - and does not get passed any parameters @()@.  We also need to change our <body> tag so that our init function is called when the body of the document is loaded.
+A function is just a collection of lines of code that are run together.  Our function has a name - @init@ - and does not get passed any parameters @()@.  We also need to change our @<body>@ tag so that our @init()@ function is called when the body of the document is loaded.
 
 @<body onLoad="init();">@
 
@@ -87,7 +87,7 @@ Comments are ignored when the browser runs the code, but can help out other prog
 
 h4. Practical
 
-Put a comment in your code at the top of your init() function to describe what it does.  Refresh the page and check you haven't broken anything. 
+Put a comment in your code at the top of your @init()@ function to describe what it does.  Refresh the page and check you haven't broken anything. 
 
 h2. Context Attributes
 
@@ -108,14 +108,13 @@ h4. Practical
 
 * Change your init() function to the following:
 
-  function init() {
-    var ctx =document.getElementById("canvas").getContext('2d');
-
-    for (i = 0; i <= 125; i=i+25) {
-      ctx.fillStyle = "rgb(" + i * 2 + ",0,0)";
-      ctx.fillRect(i , i, i + 50, i + 50);
-      }
-  }
+@function init() {@
+@var ctx =document.getElementById("canvas").getContext('2d');@
+@for (i = 0; i <= 125; i=i+25) {@
+@ctx.fillStyle = "rgb(" + i * 2 + ",0,0)";@
+@ctx.fillRect(i , i, i + 50, i + 50);@
+@}@
+@}@
 
 * Refresh the brower, and work out (quietly) what is going on
 * Change the code so that the squares change in some other way - from red to blue for instance. 
