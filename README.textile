@@ -6,8 +6,11 @@ I am not a teacher, and not even a good web developer, so feel free to comment /
 
 Mark
 
-Other useful resources I have discovered:
+Other useful resources relating to web development lessons I have discovered:
 * "http://fingswotidun.com/javascript/":http://fingswotidun.com/javascript/ aimed at 9-11 year olds
 * For slightly older groups of kids also covering web development at "blackheathcoding.posterous.com":http://blackheathcoding.posterous.com/ (who kindly allowed me to use their material about links for lesson 6).
 * "Open University Javascript as first language course":http://www.open.ac.uk/computing/m150/courseoverview.html
 * "John Resig blog post about teaching Javascript as a first language":http://ejohn.org/blog/javascript-as-a-first-language
+* Some Mozilla material "here":http://labs.toolness.com/temp/hackasaurus-pdfs/hacktivity_kit.pdf
+
+If you want to teach kids but not necessarily web development, a good starting point is Emma Mulqueeny's article "here":http://mulqueeny.wordpress.com/2011/08/20/how-to-initiate-kids-or-anyone-in-coding/
