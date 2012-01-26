@@ -1,0 +1,98 @@
+h1. Some more HTML
+
+h2. Links
+
+Links are what ties the web together. The are often blue, underlined text which when clicked on takes you somewhere else. However they can be almost any element. They could be an image for example. Links are created with an anchor tag; let's take a look at one.
+
+@<a href="http://www.example.com/my-page.html">click me</a>@
+
+The element name is a (short for anchor) and it has one required attribute, href. Then in this case it has the text 'click me' and then the closing tag </a>. The most important part of the anchor tag is the href short for hypertext reference. This attribute describes where the link will take you when you click on it. In our example it will take you to http://www.example.com/my-page.html. This is a URL which stands for *Uniform Resource Locator*, but generally people use the initials or say something like web address.
+
+h3. Understanding URLs
+
+URLs are very important so let's break them down and take a closer look at this one, http://www.example.com/my-page.html. This URL is divided into three main sections, each of which tells the browser all tell your web browser different something about how or where to find the information described by the URL. 
+
+* The protocol @http://@ tells the browser how the computers should talk to each other, what language if you like.  When dealing with the web this is almost always going to be http or https (for a more secure website).
+* The domain @www.example.com@ tells the browser where in the internet to find the information, this domain name gets translated into an IP address which is a little bit like a street address. 
+* The path @/my-page.html@ is sent by the browser to the domain using the protocol and that specific web page (or resource) is sent back to the browser.
+
+If you're creating a link to another page on the same domain you can leave the protocol and domain off and just add the path. This is called a relative link rather than an absolute link because it is relative to the current location.
+
+h3. Understanding Relative Links
+
+Relative links themselves can be split down into two groups. If they start with a slash they point to the root of the domain, if they do not they point to the current location. I'm sure that doesn't make much sense yet so let's take a look at some examples.
+
+Let us say we are on the page @http://www.example.com/foo/bar/monkey.html@ and you have a link to @/over/there.html@.  It would take us to @http://www.example.com/over/there.html@.
+
+However, if we had a link to @over/there.html@ (without the leading slash) it would take us to @http://example.com/foo/bar/over/there.html@.
+
+What has happened in the second case is that the browser has noticed that we're in /foo/bar/ and has put our path on the end of that.
+
+h4. Exercises
+
+# In the URL http://www.example.com/over/here.html which part is the domain?
+# In the URL http://www.example.com/over/here.html which part is the protocol?
+# In the URL http://www.example.com/over/here.html which part is the path?
+# If I'm on the page http://www.example.com/over/here.html and I click a link to /over/there.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and I click a link to http://www.another.com/hello.html what URL will I be on?
+# If I'm on the page http://www.example.com/over/here.html and I click a link to hello.html what URL will I be on?
+
+h2. Some more attributes: class and id attributes
+
+Two very important attributes that we need to make best use of CSS are *id* and *class*.  They are typically added to @<section>@ and @<p>@ elements so that we can apply different styles to different sections.  We will see how they are used next lesson.
+
+h4. Practical 
+
+Look at the source of a favourite web site and see if you can find any @<section>@ elements with *class* or *id* attributes (use Ctrl-F).  No?  Now look for @<div>@.  Most websites are not yet using HTML5.
+
+h2. Images
+
+We looked at images in the first HTML lesson, but now we are going to look in slightly more detail, and think for the first time about our project: to build a wish list page so that people buy the presents we want at birthdays and Christmas. One way of building our wish list would be to have a page of pictures of the presents, each of which has a link to a web site where someone can buy it for us.
+
+To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
+
+@<img src="http://placekitten.com/200/300" />@
+
+*src* is short for _source_ - where the picture comes from.  
+
+This picture comes from a site that generates placeholder pictures of whatever size you want (the size is specified between the slashes) for designers who need a picture to work on their layout but don't yet have the real picture.  There are other sites like this - "lipsum.com":http://www.lipsum.com/ generates latin holder text and if you don't like kittens you can get other pictures from "lorempixel.com":http://lorempixel.com/ which lets you choose your subject.
+
+If you want to resize your picture you can use the *width* and *height* attributes.  You are always meant to include an *alt* (for _alternative_) attribute in case the browser is incapable of displaying pictures, or for blind users.
+
+@<img src="http://www.placekitten.com/200/300" width="100" height="400" alt="A cute kitten - squashed!" />@
+
+h4. Practical
+
+* Add a kitten 150 pixels high and 300 pixels wide to a page, using jsfiddle or notepad (or both).  What happens if you miss out the / character?
+* Add an anchor to link your kitten picture to the site www.petshop.com and change the *alt* attribute to "Please buy me a kitten" 
+
+h2. Lists
+
+Now we can start building a simple list of presents we would like.  There are two types of list in html - an *ordered list*, and an *unordered list*.  Browsers will generally display them as shown below:
+
+Ordered list @<ol>@
+# One
+# Two
+
+Unordered list @<ul>@
+* Bullet 1
+* Bullet 2.
+
+Each item in the list will be in a *list item* element @<li>@, so we end up with something like:
+<pre>
+<code><ol>
+  <li>First point</li>
+  <li>Second point</li>
+  <li>Final point</li></ol>
+</code></pre>
+(The @</ol>@ would be better placed on the next line down, but an apparent bug in the renderer stops me doing that).
+
+As with virtually all HTML elements there are additional attributes - see the relevant section of "W3Schools":http://www.w3schools.com/html for more detail.
+
+h4. Practical
+
+* Think of three presents you would like - Quickly!
+* Make an unordered list of them in "JSFiddle":http://www.jsfiddle.net
+* Now rearrange them in order, starting with which you would like most, and convert the list into an ordered list
+ 
+

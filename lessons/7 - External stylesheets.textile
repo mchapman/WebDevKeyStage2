@@ -1,0 +1,52 @@
+h1. CSS Stylesheets
+
+Last time we looked at CSS we learnt how to use it to set colors and some font properties on our HTML, and we were doing it in "JSFiddle":http://www.jsfiddle.net which is obviously not how it is done in real web sites.  this lesson we are going to look at where the CSS lives in real websites.  But first we are going to do some revision.
+
+A CSS stylesheet is made up of one or more *rules*.  Each rule contains a *selector* (@p@ for example) which tells the browsers which bit of content to apply the style to, and a *declaration group* which specifies the style to be applied.
+A declaration group sits in curly brackets or braces @{}@ and consists of one or more *declarations* such as @color:green;@.
+A declaration is formed of a *property* (such as @color@ or @background-color@), a colon @:@, a *value* (such as @green@) and a semi-colon @;@.
+"White space" (spaces, tabs and line endings) don't matter.
+
+h4. The three places we can put our CSS
+
+# In an external style sheet, which we link to from the head section of our HTML.  For example @<link rel="stylesheet" type="text/css" href="my_style.css">@  this is the preferred method.
+# In an internal style sheet in the head of our HTML.  For example @<style type="text/css">h1 {color: red; background-color: yellow} p {color: green;}</style>@
+# Inline styling, such as @<p style="color:green;">blah blah</p>@.  This mixes presentation with content, and should be avoided except while experimenting.
+
+h4. Discussion
+
+Why is an external stylesheet the best place to put your CSS?  
+* Sharing between pages
+* Separation of concerns no mixing presentation with content
+* Another skill set - can be worked on by someone else
+
+In fact there is a fourth place where CSS is specified - by the browser.  Each browser has default styles built in.  This is what we see if we clear the Normalized CSS checkbox in "jsfiddle":jsfiddle.net and clear out the CSS section.
+
+h4. Demonstration
+* Copy the HTML to a .HTML file in the same folder, using notepad.  Add <html>, <head> and <body> tags as appropriate.  Save as "my.html"
+* Open the file in the browser.  Note the absence of styling (apart from browser defaults).
+* Copy the CSS from jsfiddle into a .CSS file in your document folder, using notepad.  Save as "my.css".  (Using the shortcut keystroke Ctrl-S)
+* Refresh the browser - still no styling, as we need to explicitly link the css file.
+* Create a link to the CSS file in the HTML file (an external file sheet)
+@<link rel="stylesheet" type="text/css" href="my.css">@
+* Refresh the browser (F5 - make sure you have clicked in the browser first, or you will be putting a date time into notepad).
+
+h4. Practical
+
+* Repeat the demonstration
+* Modify the .css file
+* Refresh the browser and check that your styling works.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

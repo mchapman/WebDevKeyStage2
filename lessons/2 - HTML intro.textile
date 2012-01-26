@@ -1,0 +1,72 @@
+h1. Structure and Content
+
+h2. Our first HTML file
+
+h4. Demonstration:
+
+* Open notepad
+* Write hello world with no tags
+* Save as hello.html
+* Open in Chrome
+* Right click and Inspect Element
+
+h4. Lessons:
+
+* (Some) browsers are forgiving
+* Structure of well formed HTML document - HTML, Head, Body
+
+h4. Practical:
+
+* Do it yourself
+* If you finish quickly - add some more content and have a play at adding some of the tags we saw last week, h1, title 
+
+h2. Experimenting with jsfiddle.net
+
+If we use the website "jsfiddle.net":http://www.jsfiddle.net then we get two big advantages: 
+* We get to see what we are working on at the same time as the HTML
+* We get syntax highlighting
+
+h4. Demonstration:
+
+* Type in a heading and some body
+* Do Ctrl-Enter - notice that there are no default styles
+* Untick the "Normalised CSS" checkbox and do Ctrl-Enter
+
+h4. Practical
+
+* Repeat the demonstration, and have a play in jsfiddle
+
+h2. Some common elements
+
+@<title>@ - the browser title, remember, not something that appears in the body.  Head elements cannot be used in jsfiddle.net.
+@<h1>@...@<h6>@ - headings.  1 is the biggest, 6 the smallest
+
+h2. Presentational elements (old and bad!) and semantic equivalents (new and good)
+
+@<br>@ (use @<p>@ instead).  Here the old element doesn't add meaning to the content - it adds meaning to the empty gaps between content, which is nonsense.
+@<b>@ and @<i>@ should not be used for presentation (as we will be using CSS for that - starting next week).  Elements should be about meaning, not presentation.  Presentation can then be decided depending on the medium - a reader for blind people for instance, cannot read in bold, but can add stress to words.
+
+Related semantic markup elements from HTML5:
+* @<i>@ text in an “alternate voice,” such as foreign words, technical terms and typographically italicized text 
+* @<b>@ “stylistically offset” text, such as keywords and typographically emboldened text
+* @<em>@  for stress emphasis, i.e., something you’d pronounce differently
+* @<strong>@  for strong importance
+
+Another new element is @<mark>@ which marks the text, like you were highlighting it.
+
+h2. Some new elements (and their old equivalents)
+
+@<article>@ (used to be @<div>@) - a passage of text (and perhaps other content) that makes sense on its own
+@<section>@ (used to be @<div>@) - a passage of text belongs with another section to make complete sense
+@<header>@ (used to be @<div>@) - a the top section
+@<footer>@ (used to be @<div>@) - a bottom section
+
+h2. Preview of next HTML lesson (4 lessons time)
+
+To display a picture on your page you use an @<img>@ element.  This is a singleton element - it has no closing tag (the slash appears at the end of the only tag).  All the information is contained in _attributes_ in the first tag.  For example:
+@<img src="http://www.placekitten.com/200/300" />@
+*src* is short for _source_ - where the picture comes from.  
+
+h2. Want to learn some more?
+
+"w3schools.com":http://www.w3schools.com/ is a free website where you can learn about HTML and many other web related languages.

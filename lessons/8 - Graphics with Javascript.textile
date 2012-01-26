@@ -1,0 +1,129 @@
+h1. Javascript 2 – Let's Draw!
+
+Until recently, it would have been impossible to do what we are going to do in this lesson. We are about to make use of the Canvas - one of the features that have been introduced in the latest version of HTML – version 5.  HTML 5 is still under development, and bits are changing, but the more modern browsers have implemented quite a lot of the new features already.  Today's lesson certainly works in Chrome, and all browsers will need to implement HTML 5 support to survive.
+
+h2. The Canvas
+
+A canvas, as you would expect if you know anything about oil painting, is somewhere that you can paint.  We are going to use javascript to paint pictures on our canvas but first we have to declare it:
+
+@<html>@
+@<head>@
+@<title>Javascript Lesson 2</title>@
+@</head>@
+@<body>@
+@<canvas id="canvas" width="400" height="300">@
+@Your browser doesn't support the HTML5 element canvas.@
+@</canvas>@
+@</body>@
+@</html>@
+
+We have declared a space 300 pixels high and 400 wide.  A pixel is a dot on the screen, almost too small to see.  Screens these days are generally over a thousand pixels wide.  If we open our page in an old browser that doesn't support the canvas then we will see the text “Your browser doesn't support the canvas”, but in a modern browser we don't see anything.
+
+h4. Practical
+
+In Notepad type in (or copy and paste) the html above, load it into your browser and see what you get.
+
+h2. Accessing the Canvas
+
+Notice that we gave our canvas an id.  We could have more than one canvas on our page.  We need a way of “getting hold of” our canvas in Javascript.  To do that we assign it to a variable as follows:
+
+@var ctx = document.getElementById('canvas').getContext('2d');@
+
+For now we will just say that this line uses some built-in Javascript “magic” that we don't need to understand at the moment. ctx is now our “context” variable.
+
+Our canvas is 300 pixels high and 400 wide.  We use a system of coordinates to reference individual pixels in the canvas.  The top left corner is 0,0 top right 400,0 bottom left 0,300 and bottom right 400,300.
+
+h2. Drawing a shape on the Canvas
+
+There are many methods we can call on the context.  The first one we are going to call is
+
+@ctx.fillRect(50,50,150,100);@
+
+which draws a filled in rectangle on our canvas context with top left corner 50,50, width 150 pixels and height 100 pixels.  It fills the rectangle with whatever the current fill colour is (by default black).  The syntax is object.method(parameters) where
+
+* Object is ctx – an object of class context, returned by getContext()
+* The method (something an object can do) is fillRect
+* The parameters are the values (in this case the coordinates that define where we want our rectangle) we need to pass to the method so it knows what to do.
+
+To use the method we need to put the following lines in our HTML header:
+
+@<script>@
+@function init() {@
+@  var ctx =document.getElementById("canvas").getContext('2d');@
+@  ctx.fillRect(50,50,150,100);@
+@}@
+@</script>@
+
+A function is just a collection of lines of code that are run together.  Our function has a name - @init@ - and does not get passed any parameters @()@.  We also need to change our <body> tag so that our init function is called when the body of the document is loaded.
+
+@<body onLoad="init();">@
+
+h4. Practical
+
+Add / amend the lines above and reload your page.  Don't worry if it doesn't work, but if it does work as you expect then deliberately introduce an error (such as writing filRect instead of fillRect) to be ready for the next section
+
+h2. Debugging
+
+Everyone makes mistakes, and fixing them quickly is a very important skill in programming. Perhaps the most important. There are a number of tools in the browser to help you. If your script is broken (and it should be at this stage) then opening up the console in Chrome (Ctrl + Shift + J) should display a helpful error message, and at the far right hand side a hyperlink reference to what script the error occurred in and on what line number.
+
+h4. Practical
+
+Fix your code from the previous practical.
+
+h2. Comments
+
+Some people consider it good practice to write comments in your code.  In Javascript you can write single line comments
+
+@// This is a comment@
+
+or multi-line comments
+
+@/*@
+@This is a multi-line comment.@
+@Because it goes onto two lines@
+@*/@
+
+Comments are ignored when the browser runs the code, but can help out other programmers (or you, when you come back to your own code after a break) to understand what is meant to happen.
+
+h4. Practical
+
+Put a comment in your code at the top of your init() function to describe what it does.  Refresh the page and check you haven't broken anything. 
+
+h2. Context Attributes
+
+* @fillStyle@ is the colour that shapes are filled in with.  Any valid color can be used, such as: @ctx.fillStyle="red"@, @ctx.fillStyle="rgb(255,0,0)"@
+* @strokeStyle@ is the colour for strokes/lines.  For example @ctx.strokeStyle = "red"@
+* @lineWidth@ is how wide the current drawing stroke is, in pixels.  For a thick line you might do @ctx.lineWidth = 10@
+
+For a complete list visit the "W3 Schools Canvas page":http://www.w3schools.com/html5/html5_ref_canvas.asp
+
+h2. More Methods
+
+* @strokeRect(x,y,w,h)@ draws the outline of a rectangle using the color of the current strokeStyle
+* @clearRect(x,y,w,h)@ clears a rectangle area
+
+For a complete list visit the "W3 Schools Canvas page":http://www.w3schools.com/html5/html5_ref_canvas.asp
+
+h4. Practical
+
+* Change your init() function to the following:
+
+  function init() {
+    var ctx =document.getElementById("canvas").getContext('2d');
+
+    for (i = 0; i <= 125; i=i+25) {
+      ctx.fillStyle = "rgb(" + i * 2 + ",0,0)";
+      ctx.fillRect(i , i, i + 50, i + 50);
+      }
+  }
+
+* Refresh the brower, and work out (quietly) what is going on
+* Change the code so that the squares change in some other way - from red to blue for instance. 
+
+h2. How will this help us with our project?
+
+Not much, in truth, since our project is likely to be a relatively simple page with no fancy graphics (though you are welcome to add some if you want), but playing with graphics is a fun was to practice doing the things we learnt about in our first Javascript lesson: assigning variables and iterating.  You could use it to generate a random and pretty background for your page, though.
+
+h2. Recommended
+
+To learn more about javascript, and just to have fun, visit "codecademy":http://www.codecademy.com/

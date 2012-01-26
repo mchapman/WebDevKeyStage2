@@ -1,0 +1,52 @@
+h1. Introduction and History
+
+h2. What is the web?
+
+In the beginning (which was not long ago) was the internet – a bunch of computers linked together mostly so that universities and academic institutions could share their research.  They used various protocols.  What is a protocol?  Informal speech, hands up in class, formal meetings, file transfers.
+
+One of the academic institutions was CERN, in Switzerland, which you may have heard of because they smash atoms together very fast (maybe even faster than the speed of light).  "Tim Berners-Lee":http://www.facebook.com/profile.php?id=100000424716576 "(homepage here)":http://www.w3.org/People/Berners-Lee/, one of the people who worked at CERN, had an idea to make sharing information easier which he proposed in 1989.  This became the World Wide Web and the first site went public 6th August 1991 and the web was born.
+
+h2. Structure - HTML
+
+The content or structure of web pages is written in a language called HTML – Hyper Text Markup Language.
+One of the first web pages: "http://www.w3.org/History/19921103-hypertext/hypertext/WWW/Link.html":http://www.w3.org/History/19921103-hypertext/hypertext/WWW/Link.html
+Let's look at that page and the look at the source.
+
+h2. What is a browser?
+
+Define it: A web browser is a software application for retrieving, presenting, and traversing information resources on the World Wide Web
+
+The web started to gain popularity in 1993 when the first popular browser, Mosaic, was written in an American university by a team led by "Marc Andreessen":http://www.facebook.com/pages/Marc-Andreessen/109250945767519.  Mosaic was popular because it allowed graphics to be shown in web pages. 
+
+Examples of modern browsers – desktops, mobiles, games devices, TVs etc
+
+Mosaic (which soon changed it's name to Netscape) pushed along the development of the internet in the early 90s, and was to a large extent responsible for introducing the two languages that, along with HTML, you need to know about to understand the web.
+
+h2. Presentation - CSS
+
+As the web grew, people wanted to make the content prettier and various browsers did various things to make that easier, but people realised that a standard needed to be developed so that all web pages could work with all browsers.  The language that was decided on was called CSS (which stands for Cascading Style Sheets) and it was published in December 1996.  Browsers did not have good support for it until 2000.
+
+h2. Behaviour - Javascript
+
+As well as wanting to make their pages prettier, people wanted to make them do things.  Sometimes simple things like making their pages change content when a button was pressed, and sometimes   really complicated things like Google calendar.  They invented a language called JavaScript (or JS).
+
+Mosaic (sort of) lives on today, in the form of the Firefox browser.  
+
+h2. Practice looking at served source
+
+Look at some web pages look at the served source using Ctrl-U.
+
+Computers are stupid, but very fast.  Look at some big sites like Facebook.  Look at Club Penguin/Moshi Monsters.  What is that about?  Most of what browsers are doing is quite simple (when know a bit of HTML, CSS and JS) but they do it super quick.
+
+h2. Separation of Concerns
+
+Structure, Presentation and Behaviour
+Look at a few websites and identify what is likely to be HTML, CSS and JS.
+
+For example:
+"http://en.wikipedia.org/wiki/School":http://en.wikipedia.org/wiki/School
+"http://blogger.com":http://blogger.com
+
+Optional homework:Have a read of "Tim Berners-Lee's Answers for Young People":http://www.w3.org/People/Berners-Lee/Kids.html (miss out the section entitled "I'm interested in Math -- what exciting stuff is there we don't do at school?" which is quite advanced, unless you are super interested.
+
+

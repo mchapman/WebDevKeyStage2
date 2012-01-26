@@ -1,0 +1,85 @@
+h1. Making things prettier
+
+This lesson we are going to start making our content a bit prettier.  We do that using a language called CSS - which stands for Cascading Style Sheet.
+
+h2. Colours
+
+h4. Demonstration
+
+In "jsfiddle.net":http://www.jsfiddle.net enter the following:
+* HTML: @<h1>My heading</h1><p>Here is some body text blah blah.</p>@
+* CSS: @h1 {color: red;} p {color: green;}@
+
+h4. Practical
+* Do the demonstration yourself.  Note that the American spelling of colour is used - *color*.
+* Play with the colours a bit.  The 17 standard colours are aqua, black, blue, fuchsia, gray, grey, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow.  A complete list, with samples, can be found at "www.w3schools.com/cssref/css_colornames.asp":http://www.w3schools.com/cssref/css_colornames.asp.
+* Play with the normalize css checkbox.  Think about what is happening.
+
+Colours can be expressed in other ways, such as three numbers between 0 and 255, representing how much Red, Green and Blue there is in the colour.  For example @color: rgb(242,150,9)@ is a kind of orangey brown.  You will also see @color: #f29609@ which is the same three numbers expressed in base 16, one after the other.  The "ColorPicker.com":www.colorpicker.com site is a good place to learn about colours and which colours work well together.
+
+h2. The syntax of CSS
+
+A CSS stylesheet is made up of one or more *rules*.
+Each rule contains a *selector* (@p@ for example) which tells the browsers which bit of content to apply the style to, and a *declaration group* which specifies the style to be applied.
+A declaration group sits in curly brackets or braces @{}@ and consists of one or more *declarations* such as @color:green;@.
+A declaration is formed of a *property* (such as @color@), a colon @:@, a *value* (such as @green@) and a semi-colon @;@.
+"White space" (spaces, tabs and line endings) don't matter.
+
+There are two common ways to lay out CSS:
+# Concise - one line per rule
+This is best for production sites, since there is slightly less data to be transferred (because you are saving on the white-space)
+@h1{color:red;}@
+@p{color:green;}@
+# Verbose - one line per declaration
+Easier to work on, particularly when working with others.
+@h1 {@
+  @color: red;@
+@}@
+@p {@
+  @color: green;@
+@}@
+
+Unlike with HTML, where the browser doesn't mind the odd missing closing tag etc, CSS has to be _exact_: a missing colon or a mis-placed curly bracket will stop things working.
+
+h2. Background colour
+
+The next property we will use is @background-color@ - it uses the same values as color.
+
+h4. Practical
+
+* Give your heading a background colour
+* If you have time, use "ColorPicker.com":http://www.colorpicker.com to suggest a nice colour scheme.
+
+h2. Some more properties - Fonts
+
+There are several properties that affect the font and typeface.  We will look at a couple for now - *font-style* and *font-weight*.  The values for font-style are *normal* and *italic*.  The values for font-weight are *normal*, *bold*, *bolder*, *lighter*.  Find out more about fonts at "w3schools":http://www.w3schools.com/css/css_font.asp
+
+h4. Practical
+
+Experiment with font weights and styles.
+
+h2. Aligning your text
+
+*text-align* is a very useful property that sets the alignment of text.  Values are *center* (note the american spelling), *left*, *right* and *justify*.
+
+h4. Practical
+
+Experiment with alignment - you will need quite a lot of text (three lines or more) to see what *justify* means, but it should come out looking like a newspaper or magazine column.
+
+h2. Internal Stylesheets and Browser Inspection Tools
+
+h4. Demonstration
+
+* In jsfiddle make sure Normalized CSS is enabled
+* Using the browser _Inspect Element_ or equivalent, find the iframe where jsfiddle constructs the page.
+* Point out external style sheet 
+@<link rel="stylesheet" type="text/css" href="/css/normalize.css">@
+* Point out internal style sheet 
+@<style type="text/css">@
+@p {color: red}@
+@</style>@
+
+h4. Practical
+
+* Repeat the demonstration and locate the two types of CSS in the iframe
+* Uncheck the normalized css and refresh.  Where is the @<link rel="stylesheet" type="text/css" href="/css/normalize.css">@ gone?
