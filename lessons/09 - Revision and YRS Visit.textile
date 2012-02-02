@@ -1,1 +1,198 @@
-This week we will be getting a visit from a local Young Rewired State veteran.
+h1. Revision and visit from a local young developer
+
+h2. HTML revision
+
+HyperText Markup Language.  Content and structure.
+
+Lesson 1
+@<title>@
+@<h1>@ .. @<h6>@
+@<p>@
+@<i>@
+@<b>@
+@<em>@
+@<strong>@
+@<mark>@
+@<article>@
+@<section>@
+@<header>@
+@<footer>@
+
+Lesson 2
+
+Relative and absolute links
+@<a href="http://www.st-marks.e-sussex.sch.uk">My School</a>@
+@<img src="http://www.st-marks.e-sussex.sch.uk/Images/St%20Marks%20Logo.gif" />@
+Ordered @<ol>@ and unordered @<ul>@ lists and items @<li>@ in them
+
+h2. CSS Revision
+
+Cascading Style Sheets.  Styling - appearance.
+
+Lesson 1
+
+selector { property : value ; [property : value ;] }
+@color@
+@background-color@
+
+h4. Where you put your CSS 
+
+* inline @<p style="color:red;">Hello World</p>@
+* internal style sheets @<style type="text/css">p{color:red;}</style>@
+* external style sheets @<link rel="stylesheet" type="text/css" href="mycss.css">@
+
+Lesson 2 (mostly spent on external style sheet practice)
+
+@font-style@ (normal, italic)
+@font-weight@ (normal, bold, bolder, lighter)
+@text-align@ (left, right, center, justify)
+
+
+3:20 Brief revision of the second HTML/CSS/Javascript lessons
+3:45 (or earlier if you make it) How you started coding, stuff you have done, YRS
+3:50 SVM - explanation and demo
+4:00 Fractals on canvas (have you actually done something here?  can I see it?)
+4:10 / 4:15 An exercise using the canvas where we can both help them.
+4:30 finish
+
+h2. Javascript Revision
+
+Lesson 1
+@var myName = "John";@
+Output: @document.write()@, @console.log()@, @alert()@, @confirm()@
+Operators: @+*/-%@
+Repetition: @for(i=0;i<5;i++) { }@
+Comparison operators: @>@, @<@, @>=@, @<=@, @===@, @!==@
+Branching: @if() { }@ [@else if() { }@] [@else { }@]
+
+Lesson 2
+Canvas
+@<canvas id="canvas1" width="400" height="300">@
+@Your browser doesn't support the HTML5 element canvas.@
+@</canvas>@
+@var ctx = document.getElementById('canvas1').getContext('2d');@
+
+Context attributes
+@fillStyle@
+@strokeStyle@
+@lineWidth@
+Context methods
+@fillRect(x,y,w,h)@
+@strokeRect(x,y,w,h)@
+@clearRect(x,y,w,h)@
+
+Comments  // and /* ... */
+Debugging in the console
+REPL in the console Read Evaluate Print Loop
+
+A new way of doing colour which we need for later in the lesson
+
+An HSL color value is specified with: hsl(hue, saturation, lightness).
+
+Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.
+
+h4. Demonstration
+<html>
+<head>
+<script>
+window.onload = function() {
+  var ctx =document.getElementById("canvas").getContext('2d');
+
+  var saturation=100;
+  var lightness=50;
+
+  for (i=0;  i <= 360; i+= 15) {
+      ctx.fillStyle = "hsl(" + i + ", " +saturation+ "%," +lightness+ "%)";
+      ctx.fillRect(i,0,15,300);
+      }
+  }
+
+</script>
+<title>Javascript Revision</title>
+</head>
+<body>
+<canvas id="canvas" width="400" height="300">
+Your browser doesn't support the HTML5 element canvas.
+</canvas>
+</body>
+</html>
+
+h4. Question
+What do you think about the line @ctx.fillStyle = "hsl(" + i + ", " +saturation+ "%," +lightness+ "%)";@?  How could it be improved?
+
+
+h2. Harry from UCTC and YRS
+
+* How I started coding, what I have done, YRS
+* A current project - Support Vector Machine
+
+h2. Some Mathematical fun
+
+The mandelbrot set is a set of numbers which generate a beautiful fractal, as you can see from "this Youtube video":http://www.youtube.com/watch?v=G_GBwuYuOOs
+
+Harry wrote the following code:
+
+<html>
+ <head>
+   <script type="text/javascript">
+     window.onload = function() {
+       var mandelbrotCanvas = document.getElementById('mandelbrotCanvas');
+       var context = mandelbrotCanvas.getContext('2d');
+
+       var width = mandelbrotCanvas.width;
+       var height = mandelbrotCanvas.height;
+
+       var max_iter = 1000;
+       var saturation = 80;
+       var lightness = 50;
+
+       for (i=0;i<width;i++) {
+         for (j=0;j<height;j++) {
+           var Za = 0;
+           var Zb = 0;
+           var Ca = 3*i/(width -1) - 2.25;
+           var Cb = 2*j/(height-1) - 1;
+
+           var iter = 0;
+           var Zas = 0;
+           var Zan;
+           while((Zas + Zb*Zb) < 4 && iter < max_iter) {
+             Zas = Za*Za;
+             Zan = Zas - Zb*Zb + Ca;
+             Zb = 2*Za*Zb + Cb;
+             Za = Zan;
+             iter++;
+           }
+
+           if (iter === max_iter) {
+             context.fillStyle = 'black';
+           } else {
+             var hue = iter + 1 - Math.log(Math.log(Math.sqrt(Zas + Zb*Zb)))/Math.log(2);
+             context.fillStyle = 'hsl(' + hue + ', ' + saturation + '%, ' + lightness + '%)';
+           }
+
+           context.fillRect(i, j, 1, 1);
+         }
+       }
+     }
+   </script>
+  </head>
+ <body>
+   <canvas id="mandelbrotCanvas" width="400" height="200">
+   </canvas>
+ </body>
+</html>
+
+which generates a mandelbrot set and colours it in.
+
+h4. Practical
+
+Either:
+* Copy and paste Harry's code and try and find ways of improving it (without breaking it)
+or
+* Take the HSL colour rectangles from earlier in the lesson and try to make a few small changes to generate the following picture in the canvas
+
+
+
+
+

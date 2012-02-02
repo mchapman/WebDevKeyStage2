@@ -1,0 +1,2 @@
+The first lesson where I got the length pretty much spot on.  They were engaged as soon as they saw a rectangle on their screen (though they did insist on calling it a dot).  Once again quite a lot of my help needed in getting them to just copy and paste the code.  One of them started adding intermediate squares withing seconds (but didn't crack the colour change), while the others didn't click in the 8 minutes or so.  I know at least one went home and played on codecademy for an hour (helping to take them up to their one million users, which they just passed this week).
+

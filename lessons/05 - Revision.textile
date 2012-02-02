@@ -20,7 +20,7 @@ HyperText Markup Language.  Content and structure.
 @<section>@
 @<header>@
 @<footer>@
-@<img src="http://www.st-marks.e-sussex.sch.uk/Images/St%20Marks%20Logo.gif>@
+@<img src="http://www.st-marks.e-sussex.sch.uk/Images/St%20Marks%20Logo.gif" />@
 
 h2. CSS Revision
 
