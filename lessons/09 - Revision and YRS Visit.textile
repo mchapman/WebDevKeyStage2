@@ -4,60 +4,54 @@ h2. HTML revision
 
 HyperText Markup Language.  Content and structure.
 
-Lesson 1
-@<title>@
-@<h1>@ .. @<h6>@
-@<p>@
-@<i>@
-@<b>@
-@<em>@
-@<strong>@
-@<mark>@
-@<article>@
-@<section>@
-@<header>@
-@<footer>@
+h4. Lesson 1
 
-Lesson 2
+<pre><code><title>
+<h1> .. <h6>
+<p>
+<i>
+<b>
+<em>
+<strong>
+<mark>
+<article>
+<section>
+<header>
+<footer></code></pre>
 
-Relative and absolute links
-@<a href="http://www.st-marks.e-sussex.sch.uk">My School</a>@
-@<img src="http://www.st-marks.e-sussex.sch.uk/Images/St%20Marks%20Logo.gif" />@
+h4. Lesson 2
+
+Absolute and Relative links, images
+<pre><code><a href="http://www.st-marks.e-sussex.sch.uk">My School</a>
+<img src="http://www.st-marks.e-sussex.sch.uk/Images/St%20Marks%20Logo.gif" /></code></pre>
+
 Ordered @<ol>@ and unordered @<ul>@ lists and items @<li>@ in them
 
 h2. CSS Revision
 
 Cascading Style Sheets.  Styling - appearance.
 
-Lesson 1
+h4. Lesson 1
 
 selector { property : value ; [property : value ;] }
 @color@
 @background-color@
 
-h4. Where you put your CSS 
-
+Where you put your CSS 
 * inline @<p style="color:red;">Hello World</p>@
 * internal style sheets @<style type="text/css">p{color:red;}</style>@
 * external style sheets @<link rel="stylesheet" type="text/css" href="mycss.css">@
 
-Lesson 2 (mostly spent on external style sheet practice)
+h4. Lesson 2 (mostly spent on external style sheet practice)
 
 @font-style@ (normal, italic)
 @font-weight@ (normal, bold, bolder, lighter)
 @text-align@ (left, right, center, justify)
 
-
-3:20 Brief revision of the second HTML/CSS/Javascript lessons
-3:45 (or earlier if you make it) How you started coding, stuff you have done, YRS
-3:50 SVM - explanation and demo
-4:00 Fractals on canvas (have you actually done something here?  can I see it?)
-4:10 / 4:15 An exercise using the canvas where we can both help them.
-4:30 finish
-
 h2. Javascript Revision
 
-Lesson 1
+h4. Lesson 1
+
 @var myName = "John";@
 Output: @document.write()@, @console.log()@, @alert()@, @confirm()@
 Operators: @+*/-%@
@@ -65,34 +59,37 @@ Repetition: @for(i=0;i<5;i++) { }@
 Comparison operators: @>@, @<@, @>=@, @<=@, @===@, @!==@
 Branching: @if() { }@ [@else if() { }@] [@else { }@]
 
-Lesson 2
+h4. Lesson 2
+
 Canvas
-@<canvas id="canvas1" width="400" height="300">@
-@Your browser doesn't support the HTML5 element canvas.@
-@</canvas>@
-@var ctx = document.getElementById('canvas1').getContext('2d');@
+<pre><code><canvas id="canvas1" width="400" height="300">
+Your browser doesn't support the HTML5 element canvas.</canvas>
+var ctx = document.getElementById('canvas1').getContext('2d');</code></pre>
 
 Context attributes
-@fillStyle@
-@strokeStyle@
-@lineWidth@
+<pre><code>fillStyle
+strokeStyle
+lineWidth</code></pre>
 Context methods
-@fillRect(x,y,w,h)@
-@strokeRect(x,y,w,h)@
-@clearRect(x,y,w,h)@
+<pre><code>fillRect(x,y,w,h)
+strokeRect(x,y,w,h)
+clearRect(x,y,w,h)</code></pre>
 
 Comments  // and /* ... */
 Debugging in the console
 REPL in the console Read Evaluate Print Loop
 
-A new way of doing colour which we need for later in the lesson
+h2. A new way of doing colour which we need for later in the lesson
 
-An HSL color value is specified with: hsl(hue, saturation, lightness).
+An HSL color value is specified with: @hsl(hue, saturation, lightness)@.
 
-Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.
+* *Hue* is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue. 
+* *Saturation* is a percentage value; 0% means a shade of gray and 100% is the full color. 
+* *Lightness* is also a percentage; 0% is black, 100% is white.
 
 h4. Demonstration
-<html>
+
+<pre><code><html>
 <head>
 <script>
 window.onload = function() {
@@ -115,24 +112,32 @@ window.onload = function() {
 Your browser doesn't support the HTML5 element canvas.
 </canvas>
 </body>
-</html>
+</html></code></pre>
+
+Notice that we are using a different way of getting the browser to run our javascript - we are making use of the *onload* event of the *window* object.
 
 h4. Question
-What do you think about the line @ctx.fillStyle = "hsl(" + i + ", " +saturation+ "%," +lightness+ "%)";@?  How could it be improved?
 
+What do you think about the line @ctx.fillStyle = "hsl(" + i + ", " +saturation+ "%," +lightness+ "%)";@?  How could it be improved?
 
 h2. Harry from UCTC and YRS
 
 * How I started coding, what I have done, YRS
-* A current project - Support Vector Machine
+* (3:50) A current project - Support Vector Machine
 
-h2. Some Mathematical fun
+h2. (4:00) Some Mathematical fun
 
 The mandelbrot set is a set of numbers which generate a beautiful fractal, as you can see from "this Youtube video":http://www.youtube.com/watch?v=G_GBwuYuOOs
 
-Harry wrote the following code:
+Harry wrote the code below.  Although it is the biggest block of code yet seen, and mathematically complex, it only uses two things that are new to us - both methods of the built in @Math@ object:
+* @Math.sqrt()@ - calculates the square root of a number
+* @Math.log()@ - calculates the natural logarithm of a number (it isn't important what this means for our purposes)
 
-<html>
+There are two things to note about the Math class:
+* Calling a method is generally computationally expensive - it takes much longer than a simple number multiplication or something
+* Math is singular, not plural, because that is how they say it in America.
+
+<pre><code><html>
  <head>
    <script type="text/javascript">
      window.onload = function() {
@@ -181,18 +186,17 @@ Harry wrote the following code:
    <canvas id="mandelbrotCanvas" width="400" height="200">
    </canvas>
  </body>
-</html>
+</html></code></pre>
 
 which generates a mandelbrot set and colours it in.
+
+<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/images/mandelbrot.jpg" />
 
 h4. Practical
 
 Either:
-* Copy and paste Harry's code and try and find ways of improving it (without breaking it)
+* Copy and paste Harry's code and try and find ways of improving it.  There are three fairly simple improvements that can be made without any knowledge of maths.
 or
 * Take the HSL colour rectangles from earlier in the lesson and try to make a few small changes to generate the following picture in the canvas
-
-
-
-
-
+<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/images/images.bmp" />
+Hint: Vary the saturation.
