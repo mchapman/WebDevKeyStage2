@@ -1,0 +1,3 @@
+Really good lesson, and quite well judged for time again (twice running - amazing).  Lesson was extended by 15 minutes as we were visited by a guest and a photographer for the local paper.
+
+Kids were enthused by Harry, visiting YRSer and bit of a mathematical wunderkind, and most seemed to be much more proficient at putting the code in the right place, refreshing the browser etc.  Also most were beginning to get more interested in playing with the code and seeing what happened.  At this stage nobody seems to be making any real effort to work out why things are happening when they make changes, and the creativity that is abundant when playing with HTML and CSS has not yet surfaced with coding.

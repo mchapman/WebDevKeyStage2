@@ -122,20 +122,24 @@ What do you think about the line @ctx.fillStyle = "hsl(" + i + ", " +saturation+
 
 h2. Harry from UCTC and YRS
 
-* How I started coding, what I have done, YRS
-* (3:50) A current project - Support Vector Machine
+* How I started coding, what I have done, 
+* Young Rewired State
 
-h2. (4:00) Some Mathematical fun
+h2. Some Mathematical fun
 
 The mandelbrot set is a set of numbers which generate a beautiful fractal, as you can see from "this Youtube video":http://www.youtube.com/watch?v=G_GBwuYuOOs
 
-Harry wrote the code below.  Although it is the biggest block of code yet seen, and mathematically complex, it only uses two things that are new to us - both methods of the built in @Math@ object:
+Harry wrote the code below.  Although it is the biggest block of code yet seen, and mathematically complex, it only uses three things that are new to us - two of them methods of the built in @Math@ object:
 * @Math.sqrt()@ - calculates the square root of a number
 * @Math.log()@ - calculates the natural logarithm of a number (it isn't important what this means for our purposes)
 
 There are two things to note about the Math class:
 * Calling a method is generally computationally expensive - it takes much longer than a simple number multiplication or something
-* Math is singular, not plural, because that is how they say it in America.
+* Math is singular, not plural, because that is how they say it in America.  In all other respects British and American mathematics are the same.
+
+The other new thing is a similar to a for-loop, except that instead of it being repeated a fixed number of times it gets repeated while a condition holds.
+
+@while (someCondition) {doSomething;}@
 
 <pre><code><html>
  <head>
@@ -153,6 +157,7 @@ There are two things to note about the Math class:
 
        for (i=0;i<width;i++) {
          for (j=0;j<height;j++) {
+           /* complicated maths bit starts here */
            var Za = 0;
            var Zb = 0;
            var Ca = 3*i/(width -1) - 2.25;
@@ -168,11 +173,14 @@ There are two things to note about the Math class:
              Za = Zan;
              iter++;
            }
+           /* complicated maths bit ends here (apart from one line) */
 
            if (iter === max_iter) {
              context.fillStyle = 'black';
            } else {
+             // another line of maths magic below
              var hue = iter + 1 - Math.log(Math.log(Math.sqrt(Zas + Zb*Zb)))/Math.log(2);
+   
              context.fillStyle = 'hsl(' + hue + ', ' + saturation + '%, ' + lightness + '%)';
            }
 
