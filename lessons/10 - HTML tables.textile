@@ -115,5 +115,7 @@ h4. Practical
 * Add a new style input element from the list, using "W3Schools":http://www.w3schools.com/html5/html5_form_input_types.asp to help you.
 * Submit the form and see how the values selected are passed to the server
 
-Once you have completed the practical you can do some more work on your project.  For each item on your wishlist you are going to need _at least_ a description and hyperlink (to the page where it can be bought).
+h2. Project Work
+
+Once you have completed the practical you can do some more work on your project.  For each item on your wishlist you are going to need _at least_ a description and hyperlink (to the page where it can be bought).  Save the page so you can continue the work next week.
 
