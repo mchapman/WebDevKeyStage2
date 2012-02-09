@@ -1,0 +1,5 @@
+A fairly well judged lesson, though nobody started doing proper work on their project.  All but a couple of the kids are now very confident at copying example code into notepad, loading it in the browser and playing with it.
+
+The people who missed the javascript lesson last week thought this was the best lesson.
+
+It turns out that one of the kids has been playing around at home and is now quite good at CSS3 transitions (I have not yet played with them - oops)

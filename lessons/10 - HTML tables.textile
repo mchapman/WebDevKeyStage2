@@ -25,7 +25,7 @@ h4. Practical
 
 h2. HTML Forms
 
-All of our work so far has been about presenting content, but HTML can also be used to collect data, using a *form* controls.  The data collected gets passed back to the web server, which may store it for processing later.
+All of our work so far has been about presenting content, which was all that the web could do in the early days (which remember was only 20 years ago).  Our project needs a dynamic website, however, since we need the server to record when one of our wishes has been bought, so we don't get two of them.  As well as presenting data HTML can be used to collect it, using a *form* controls.  The data collected gets passed back to the web server, which may store it for processing later.
 
 A form is a container element that generally holds at least two *input* elements.  One is always of type *submit* which gives the user a button to press when they have filled in the form.  Other input elements can have a variety of types (we will only look at a few) but will always have a *name* attribute, which is used in passing the data back to the server.
 
@@ -118,4 +118,3 @@ h4. Practical
 h2. Project Work
 
 Once you have completed the practical you can do some more work on your project.  For each item on your wishlist you are going to need _at least_ a description and hyperlink (to the page where it can be bought).  Save the page so you can continue the work next week.
-
