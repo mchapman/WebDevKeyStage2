@@ -5,15 +5,17 @@ In the last HTML lesson we saw that we can use a list (ordered or unordered) for
 Tables use the @<table>@ element.  Every row needs a table row element - @<tr>@, and every *cell* within the row needs a table data element @<td>@.  It is very common to use a border attribute with your table element such as @border="1"@.
 
 There is a lot that you can do with tables such as have cells spanning columns, headings etc (see the relevant section of "W3Schools":http://www.w3schools.com/html for more detail) but one thing you should never do is use tables to lay out html content that is not a list of similar data elements - that is the job of CSS.
-<pre>
-<code><table border="1">
-    <tr>
-      <td>row 1, cell 1</td>
-      <td>row 1, cell 2</td></tr>
-    <tr>
-      <td>row 2, cell 1</td>
-      <td>row 2, cell 2</td></tr></table>
-</code></pre>
+
+<pre><code><table border="1">
+  <tr>
+    <td>row 1, cell 1</td>
+    <td>row 1, cell 2</td>
+  </tr>
+  <tr>
+    <td>row 2, cell 1</td>
+    <td>row 2, cell 2</td>
+  </tr>
+</table></code></pre>
 
 h4. Practical
 
@@ -61,67 +63,38 @@ Check that clicking on "What is your name" puts the input focus on the text inpu
 
 h2. Other input types
 
-There are several other input types:
-<form>
-    <section>
-        <p>This html:</p>
-        <code>&lt;label for=&quot;password-example&quot;&gt;A password input displays blobs instead of the characters typed&lt;/label&gt;&lt;br /&gt;<br/>
-        &lt;input type=&quot;password&quot; name=&quot;user-password&quot; id=&quot;password-example&quot; /&gt;</code>
-        <p>Generates this:</p>
-        <label for="password-example">A password input displays blobs instead of the characters typed</label>
-        <input type="password" name="user-password" id="password-example" />
-    </section>
-    <hr>
-    <section>
-        <p>A radio button group only allows one of the options to be selected.  This html:</p>
-        <code>&lt;input type=&quot;radio&quot; name=&quot;year&quot; value=&quot;5&quot; /&gt; Year 5&lt;br /&gt;<br>
-        &lt;input type=&quot;radio&quot; name=&quot;year&quot; value=&quot;6&quot; /&gt; Year 6</code>
-        <p>Generates this:</p>
-        <input type="radio" name="year" value="5" /> Year 5<br />
-        <input type="radio" name="year" value="6" /> Year 6        
-    </section>
-    <hr>
-    <section>
-        <p>Checkboxes are independent of each other - you can select as many as you like.  This html:</p><code>
-        &lt;input type=&quot;checkbox&quot; name=&quot;pets&quot; value=&quot;Dog&quot; /&gt; I have a dog<br />
-        &lt;input type=&quot;checkbox&quot; name=&quot;pets&quot; value=&quot;Cat&quot; /&gt; I have a cat<br />
-        &lt;input type=&quot;checkbox&quot; name=&quot;pets&quot; value=&quot;Hamster&quot; /&gt; I have a hamster</code>
-        <p>Generates this:</p>
-        <input type="checkbox" name="pets" value="Dog" /> I have a dog<br />
-        <input type="checkbox" name="pets" value="Cat" /> I have a cat<br />
-        <input type="checkbox" name="pets" value="Hamster" /> I have a hamster
-    </section>            
-    <hr>
-    <section>
-        <p>Although not an input type, selects (combo boxes) are an alternative to radio buttons when only one option is allowed.  This html:</p><code>
-        Favourite sport:<br />
-        &lt;select name=&quot;sport&quot;&gt;<br />
-            &lt;option value=&quot;football&quot;&gt;Football&lt;/option&gt;<br />
-            &lt;option value=&quot;netball&quot;&gt;Netball&lt;/option&gt;<br />
-            &lt;option value=&quot;athletics&quot;&gt;Athletics&lt;/option&gt;<br />
-            &lt;option value=&quot;rounders&quot;&gt;Rounders&lt;/option&gt;<br />
-        &lt;/select&gt;</code>
-        <p>Generates this:</p>
-        Favourite sport:
-        <select name="sport">
-            <option value="football">Football</option>
-            <option value="netball">Netball</option>
-            <option value="athletics">Athletics</option>
-            <option value="rounders">Rounders</option>
-        </select>
-    </section>
-    <hr>
-    <section>
-        <p>in addition to the Submit button, other buttons can be added to forms and used to invoke javascript.  This html:</p><code>
-        &lt;input type=&quot;button&quot; value=&quot;Please Click Me!&quot; /&gt;</code>
-        <p>Generates this:</p>
-        <input type="button" value="Please Click Me!" />
-    </section>
-</form>
+There are several other input types.  This html generates a password input:
+
+<pre><code><label for="password-example">A password input displays blobs instead of the characters typed</label>
+<input type="password" name="user-password" id="password-example" /></code></pre>
+        
+A radio button group only allows one of the options to be selected:
+
+<pre><code><input type="radio" name="year" value="5" /> Year 5<br />
+<input type="radio" name="year" value="6" /> Year 6</code></pre>
+
+Checkboxes are independent of each other - you can select as many as you like.
+
+<pre><code><input type="checkbox" name="pets" value="Dog" /> I have a dog<br />
+<input type="checkbox" name="pets" value="Cat" /> I have a cat<br />
+<input type="checkbox" name="pets" value="Hamster" /> I have a hamster</code></pre>
+    
+Although not an input type, selects (combo boxes) are an alternative to radio buttons when only one option is allowed.
+
+<pre><code>Favourite sport:
+    <select name="sport">
+        <option value="football">Football</option>
+        <option value="netball">Netball</option>
+        <option value="athletics">Athletics</option>
+        <option value="rounders">Rounders</option>
+    </select></code></pre>
+
+In addition to the Submit button, other buttons can be added to forms and used to invoke javascript.
+
+<pre><code><input type="button" value="Please Click Me!" /></code></pre>
 
 Newer browsers support the HTML input types:
-<pre><code>
-color
+<pre><code>color
 date
 datetime
 datetime-local
@@ -133,14 +106,14 @@ search
 tel
 time
 url
-week
-</code></pre>
+week</code></pre>
 
 h4. Practical
 
 * Create a form with an input element and a submit button
 * Add a *Cancel* button (don't worry that it doesn't do anything)
 * Add a new style input element from the list, using "W3Schools":http://www.w3schools.com/html5/html5_form_input_types.asp to help you.
+* Submit the form and see how the values selected are passed to the server
 
 Once you have completed the practical you can do some more work on your project.  For each item on your wishlist you are going to need _at least_ a description and hyperlink (to the page where it can be bought).
 
