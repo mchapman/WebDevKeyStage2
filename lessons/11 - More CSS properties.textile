@@ -29,7 +29,7 @@ h4. Practical
 
 * Add the line @body { background-image : url(http://goo.gl/WqRGY) ; }@ to your stylesheet and refresh the browser
 * Add the declaration @background-repeat : no-repeat@ and refresh again. Notice that the actual picture is very small and the browser “tiles” it by default.
-* If you have time look at the backgrounds available from the web sites mentioned in "this":http://sixrevisions.com/graphics-design/20-useful-websites-for-graphic-design-textures-and-patterns/ blog post
+* If you have time look at the backgrounds available from the web sites mentioned in "this":http://sixrevisions.com/graphics-design/20-useful-websites-for-graphic-design-textures-and-patterns/ blog post or at "subtle patterns":http://subtlepatterns.com/
 
 h2. Class and ID
 
