@@ -1,53 +1,97 @@
+h1. CSS 3
+
+h4. Practical
+
+Reload (or recreate) two notepad instances (HTML and CSS) and a browser (with the HTML document open), so that you can see all of them.  If you need to recreate the HTML the syntax for linking to the external stylesheet is:
+@<link rel="stylesheet" href="lesson11.css" type="text/css">@
 
 h2. Inheriting, Merging and Cascading
 
 A browser builds up the property values for a selector as follows:
-
-* Start with the browser built-in styling for the selector.  If it is not defined for the selector then start with the styling for the selector that this selector inherits from (body is the lowest level).
-* Process the style sheets in the order in which they appear in the head.  If a new declaration matches your selector, merge it in.  If it clashes with an existing declaration, override the old one (cascading).
+* Start with the browser built-in styling for the selector. If it is not defined for the selector then start with the styling for the selector that this selector inherits from (body is the lowest level).
+* Process the style sheets in the order in which they appear in the head. If a new declaration matches your selector, merge it in. If it clashes with an existing declaration, override the old one (cascading).
 * Process the inline style in the same manner.
 
 h4. Practical
 
 * In your external stylesheet set the background-color to black for the p selector
-* Create an internal stylesheet that sets color to white for the p selector.  Refresh the browser - you should see white text on a black background, as the properties have been merged.
-* In your HTML file set up an inline style for a p element that sets the color to yellow.  Refresh the browser - you should see yellow text on a black background, as it has 'cascaded' on to of the white.
-* In your HTML file modify your inline style so that is says <p style="color:yellow; color:aqua">.  Refresh the browser - you should see aqua text on a black background, as the aqua was the last value to be read, and it has 'cascaded' on top of the yellow.
+* Create an internal stylesheet (@<style type=”text/css”>...</style>@) that sets color to white for the p selector. Refresh the browser – you should see white text on a black background, as the properties have been merged.
+* In your HTML file set up an inline style for a p element that sets the color to yellow. Refresh the browser – you should see yellow text on a black background, as it has ‘cascaded’ on top of the white.
+* In your HTML file modify your inline style so that is sets the color to aqua (so the whole thing says @<p style="color:yellow; color:aqua">@ (which you would never want to do). Refresh the browser – you should see aqua text on a black background, as the aqua was the last value to be read, and it has ‘cascaded’ on top of the yellow.
 
-h2. Backgrounds - styling with pictures
+You can see that a complex document, with many selectors and styling being introduced at many levels, could be very complicated.  A lot of the skill in CSS is in using as little as possible to achieve the effect you need – this makes it quicker to load and easier to understand if anyone needs to change it.  The developer tools in the browser are helpful in figuring out how a displayed style is arrived at.
 
-Last week we learnt about the HTML @<img>@ tag, which can be used to put a picture on the screen.  Remember though that we want our HTML documents only to contain content, not style, so if we want a picture _just_ for prettiness, then we don't want it in our HTML.  We _would_ use the @<img>@ tag if the picture was part of the content of the document, such as a picture of a present on your wish list in the project, but if we just wanted a fancy background for our page we would use the @background-image@ paoperty.
+h2. Backgrounds – styling with pictures
+
+We have learnt about the HTML @<img>@ tag, which can be used to put a picture on the screen. Remember though that we want our HTML documents only to contain content, not style, so if we want a picture just for prettiness, then we don’t want it in our HTML. We would use the @<img>@ tag if the picture was part of the content of the document, such as a picture of a present on your wish list in the project, but if we just wanted a fancy background for our page we would use the background-image property.
 
 h4. Practical
 
 * Add the line @body { background-image : url(http://goo.gl/WqRGY) ; }@ to your stylesheet and refresh the browser
-* Add the declaration @background-repeat : no-repeat@ and refresh again.  Notice that the actual picture is very small and the browser "tiles" it by default.
+* Add the declaration @background-repeat : no-repeat@ and refresh again. Notice that the actual picture is very small and the browser “tiles” it by default.
+* If you have time look at the backgrounds available from the web sites mentioned in "this":http://sixrevisions.com/graphics-design/20-useful-websites-for-graphic-design-textures-and-patterns/ blog post
 
 h2. Class and ID
 
-Last week we looked at adding these attributes could be used with an HTML tag - now we will see how we can make use of this.  You create a CSS selector for a class by prefixing the class name with a dot (.) which you will often see called 'period' in documentation as that is how americans say it.  You create a selector for an ID by prefixing the ID name with a hash (#) which the americans sometimes call a pound sign (I have no idea why).
+We learnt about the class and id HTML attributes but we have not yet seen what they are used for – now we will. You create a CSS selector for a class by prefixing the class name with a dot (.) which you will often see called ‘period’ in documentation as that is how americans say it. You create a selector for an ID by prefixing the ID name with a hash (#) which the americans sometimes call a pound sign (I have no idea why).
 
 h4. Practical
 
-* Add two more paragraphs to your document, one with class "bold" and one with id "italic" 
+* Add two more paragraphs to your document, one with class “bold” and one with id “italic”
 * Add some CSS to make the paragraph with the bold class appear bold
 * Add some CSS to make the paragraph with the id italic appear (yes, you guessed it) italic
 
-h2. Link States
+h2. Pseudo-classes
 
-Have you noticed how links sometimes change their appearance when you put your mouse over them or when you have visited them?  You can do this with the pseudo classes 
-* :link - an unvisited link
-* :visited - a visited link
-* :hover - an element when you mouse over it
-* :active - an element in clicked state
-If you specify styles for more than one they must be in that order).
+Have you noticed how links sometimes change their appearance when you put your mouse over them or when you have visited them? You can do this with the pseudo classes
+@:link@ – an unvisited link
+@:visited@ – a visited link
+@:hover@ – an element when you mouse over it - can also be used with table rows to good effect
+@:active@ – an element in clicked state
+
+(if you specify styles for more than one state on an @<a>@ element they must be in the order above).  
+
+A pseudo-class goes at the end of the selector.  For instance @a:visited {color: red} will make visited links appear in red.
+
+There are many other pseudo-classes, allowing you to apply a style to even rows in a table, the last bullet point in an unordered list etc.  You can find out about all of them at "w3schools":http://www.w3schools.com/cssref/css_selectors.asp
 
 h4. Practical
 
-Add a link to your favoutite website and style the link so that it appears with an orange background when it has been visited 
+Add a link to your favoutite website and style the link so that it appears with an orange background when you hover your mouse over it.
+
+h2. The Box Model
+
+All “block” HTML elements – those which are not “inline” such as @<span>@ - have three “boxes” round them.  There are a slew of properties that relate to each.
+
+<table border="1">
+ <thead> 
+  <tr>
+   <th></th>
+   <th>Padding</th>
+   <th>Border</th>
+   <th>Margin</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td></td>
+   <td>Inner box</td>
+   <td>Middle box
+   <td>Outer box
+  </tr>
+  <tr>
+   <th>Colour</th>
+   <td>background-color of the element</td>
+   <td>Background (visible when dashed etc): background-color of element.<br />Foreground: set with  border-color property</td>
+   <td>Background-color of container element</td>
+  <tr>
+ </tbody>
+</table>
+
+h4. Practical
+
+
 
 h2. So how powerful is CSS?
 
-There is a famous site on the internet called "www.csszengarden.com":http://www.csszengarden.com/ which contains an HTML file that is displayed with many different CSS files.  Have a look at some examples, examine the CSS and see what properties you recognise.
-
-You can learn more about CSS at "w3schools":http://www.w3schools.com/css
+There is a famous site on the internet called "CSS Zen Garden":http://csszengarden.com which contains an HTML file that is displayed with many different CSS files.  It has inspired a site showing what can be done with less than 1024 characters of CSS called "CSS1K":http://css1k.com.  Have a look at some examples, examine the CSS and see what properties you recognise.
