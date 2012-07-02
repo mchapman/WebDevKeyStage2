@@ -1,0 +1,70 @@
+h1. The last bit of CSS
+
+There is just a tiny bit more CSS that we can use, but the lesson isn't essential (I skipped it the first time the course was delivered) which is why I have given it a weird number.
+
+h2. Pseudo-classes
+
+Have you noticed how links sometimes change their appearance when you put your mouse over them or when you have visited them? You can do this with the pseudo classes
+@:link@ – an unvisited link
+@:visited@ – a visited link
+@:hover@ – an element when you mouse over it - can also be used with table rows to good effect
+@:active@ – an element in clicked state
+
+(if you specify styles for more than one state on an @<a>@ element they must be in the order above).
+
+A pseudo-class goes at the end of the selector.  For instance @a:visited {color: red}@ will make visited links appear in red.
+
+There are many other pseudo-classes, allowing you to apply a style to even rows in a table, the last bullet point in an unordered list etc.  You can find out about all of them at "w3schools":http://www.w3schools.com/cssref/css_selectors.asp
+
+h4. Practical
+
+Add a link to your favoutite website and style the link so that it appears with an orange background when you hover your mouse over it.
+
+h2. The Box Model
+
+<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/images/boxmodel.png" />
+All “block” HTML elements – those which are not “inline” such as @<span>@ - have three “boxes” round them.  There are a slew of properties that relate to each which you can find at "w3schools":http://www.w3schools.com/css/css_boxmodel.asp - we are only going to cover the simplest now.
+
+<table border="1">
+ <thead>
+  <tr>
+   <th></th>
+   <th>Content</th>
+   <th>Padding</th>
+   <th>Border</th>
+   <th>Margin</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <th>Position</th>
+   <td>Bullseye</td>
+   <td>Inner box</td>
+   <td>Middle box
+   <td>Outer box
+  </tr>
+  <tr>
+   <th>Colour</th>
+   <td>Value of @color@ property</td>
+   <td>Value of @background-color@ property</td>
+   <td>Background (invisible with solid border): @background-color@<br />Foreground: set with @border-color@ property</td>
+   <td>Transparent (@background-color@ of container element)</td>
+  <tr>
+  <tr>
+   <th>Sizing</th>
+   <td>@width@ and @height@ properties</td>
+   <td>@padding@</td>
+   <td>@border-width@</td>
+   <td>@margin@</td>
+ </tbody>
+</table>
+
+Sizes can be set in various units, but for now we will just use @px@ - pixels (a dot on the screen).  So to set the content size you could do @p.square-para {width:40px; height 40px}@.
+
+h4. Practical
+
+Add a 5 pixel wide blue border to all the paragraphs in your page.
+
+h2. So how powerful is CSS?
+
+There is a famous site on the internet called "CSS Zen Garden":http://csszengarden.com which contains an HTML file that is displayed with many different CSS files.  It has inspired a site showing what can be done with less than 1024 characters of CSS called "CSS1K":http://css1k.com.  Have a look at some examples, examine the CSS and see what selectors and properties you recognise.

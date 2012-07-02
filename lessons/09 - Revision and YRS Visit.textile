@@ -198,7 +198,7 @@ The other new thing is a similar to a for-loop, except that instead of it being 
 
 which generates a mandelbrot set and colours it in.
 
-<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/images/mandelbrot.jpg" />
+<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/lessons/images/mandelbrot.jpg" />
 
 h4. Practical
 
@@ -206,5 +206,5 @@ Either:
 * Copy and paste Harry's code and try and find ways of improving it.  There are three fairly simple improvements that can be made without any knowledge of maths.
 or
 * Take the HSL colour rectangles from earlier in the lesson and try to make a few small changes to generate the following picture in the canvas
-<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/images/images.bmp" />
+<img src="https://github.com/mchapman/WebDevKeyStage2/raw/master/lessons/images/images.bmp" />
 Hint: Vary the saturation.
