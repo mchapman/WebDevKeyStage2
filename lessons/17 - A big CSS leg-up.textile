@@ -1,0 +1,24 @@
+h1. A big leg-up with CSS
+
+Like jQuery makes using javascript in the browser so much easier, so "Twitter Bootstrap":http://twitter.github.com/bootstrap/ simplifies CSS
+
+h4. Practical
+
+Look through the Twitter Bootstrap pages explaining grids etc
+
+h4. Exercise
+
+Add bootstrap to your project page by linking to an external stylesheet
+
+@<link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">@
+
+Then add classes to HTML elements as required to make your project look slick.
+
+In particular:
+
+* Use grid layout to give your page nice margins (top margin needs a bit of manual work in an internal stylesheet)
+* Make the buttons beautiful
+* Make the table beautiful and stripey
+
+
+Take more than one lesson if required....

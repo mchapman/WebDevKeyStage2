@@ -1,0 +1,13 @@
+h1. Communicating with the server using AJAX (part one)
+
+h2. Introduction
+
+Draw schematic of server / internet / client.  Explain how present list is dynamic.
+
+h4. Practical
+
+Look at and understand generating the table contents in "this example page":http://stmarkswebdev.herokuapp.com/example_ajax.html
+
+h4. Exercise
+
+Update your project so it gets its list from the same data source

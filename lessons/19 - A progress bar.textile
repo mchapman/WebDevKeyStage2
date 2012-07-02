@@ -1,0 +1,9 @@
+h1. Progress bar
+
+h2. Practical
+
+Examine this "example of alternating button colours":http://stmarkswebdev.herokuapp.com/progress.html
+
+h2. Exercise
+
+Add a progress bar to your project

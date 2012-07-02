@@ -1,0 +1,19 @@
+h1.  A bit more AJAX
+
+h2. Introduction
+
+Same schematic of server / internet / client.  This week we are going to be removing presents from the list when they have been bought.
+
+Demonstrate "the present database":http://stmarkswebdev.herokuapp.com and how presents can be re-instated.
+
+h4. Exercise
+
+Update your project so it marks the removes the present from the data source
+
+h4. Exercise
+
+Populate the database with some presents you would like and change the datasource so that your page uses your list
+
+h2. Next
+
+At this point insert as many lessons as necessary to get to the point that everyone has something that works, before going on to lesson 17

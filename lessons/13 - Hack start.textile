@@ -1,0 +1,5 @@
+h1. Hack
+
+Each team / individual has 2 minutes to say what they are going to do.  Guidance may be offered.
+
+Hack away!

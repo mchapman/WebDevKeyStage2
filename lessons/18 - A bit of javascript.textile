@@ -1,0 +1,12 @@
+h1. Alternating buttons
+
+By this time you are probably getting your own ideas about what is possible, ideally making use of HTML, CSS (or Twitter Bootstrap classes) and Javascript.  This lesson and the next came from Y6 pupils on the
+first course, but by all means use alternatives.
+
+h2. Practical
+
+Examine this "example of alternating button colours":http://stmarkswebdev.herokuapp.com/alternating.html
+
+h2. Exercise
+
+Update your project so that the button style varies

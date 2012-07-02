@@ -1,1 +1,21 @@
-Using jQuery to take a wishlist and put it into a table
+h1. Using jQuery to take a wishlist and put it into a table
+
+h4. Practical
+
+Walk through this "simple example of DOM manipulation":http://stmarkswebdev.herokuapp.com/example.html understanding every line.
+
+h4. Practical
+
+Copy the example (which will now form your project) and then add a hyperlink to the page so that your relative can easily buy you a present.
+
+h2. Prepare to Hack
+
+A "Hack" is a quick attempt to make something.  It can also mean criminal behaviour involving computers, but that is not the kind we are interested in.
+
+The next two lessons (and the time between them, if you feel like putting in some overtime) will be a hack.  The process will be as follows:
+
+* Between now and next lesson think about what you think you can get done to personalise your wishlist in the time available.  You can form teams or work on your own.  If you form a team now you don't have to stay together until the end of the course, but you may.  You may work on your own if you prefer.
+* At the beginning of the next lesson every team / individual will have 2 minutes to say what they are going to do, and you may get some guidance
+* The rest of that lesson and the first half of the next will be working on the hack, asking for help where necessary.
+* The second half of the second hack lesson will be a presentation, where you show the others what you have done and how
+* Often at hacks there are prizes.  Not this one!
