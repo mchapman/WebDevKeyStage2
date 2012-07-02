@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+        <style>
+            body {margin-top: 2em}
+            .rjust {text-align: right}
+        </style>
+        <title>Mark's Wishlist</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="span10 offset1">
+                <p>Dear Father Christmas / Friends / Family,</p>
+                <p>I would really like the following stuff:</p>
+                <table id="pressies" class="table">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Picture</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="row">
+                <div class="span2 rjust">Poor me!</div>
+                <div class="progress span6">
+                    <div class="bar"></div>
+                </div>
+                <div class="span2">Kerching!</div>
+                </div>
+                <p>If you do buy me anything off the list please click the "I have bought this" button next to it, so that no-one else buys the same thing.  Thanks in advance,</p>
+                <p>Mark</p>
+                <p>P.S.  Sorry about the styling - hopefully the people doing the course will do better.</p>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+            function updateProgressBar(progress, target) {
+                var percent;
+                if (progress === 0) {
+                    percent = 1;
+                } else {
+                    percent = progress / target * 100;
+                }
+                $('.bar').attr('style','width: '+ percent + '%');
+            }
+            $(document).ready(function(){
+
+                var pressieList = [
+                        {
+                            _id: "4f31b8be8f82f84b37000001",
+                            created_at: "2012-02-07T23:50:22.576Z",
+                            description: "Our Friends in the North DVD",
+                            imgUrl: "http://ecx.images-amazon.com/images/I/51KCQ5vCTFL._SL500_AA300_.jpg",
+                            price: "25",
+                            url: "http://www.amazon.co.uk/Our-Friends-North-BBC-DVD/dp/B003N7T6PW",
+                            wisher: "Mark"
+                        },
+                        {
+                            _id: "4f34ec6ae3e46f0100000001",
+                            created_at: "2012-02-10T10:07:38.664Z",
+                            description: "Glass Retrospective",
+                            imgUrl: "http://ecx.images-amazon.com/images/I/41alKmox8XL._SL500_AA300_.jpg",
+                            price: "61",
+//                            reason_removed: "Someone bought it",
+//                            removed_at: "2012-06-14T13:19:02.025Z",
+                            url: "http://www.amazon.co.uk/Glass-Box-Nonesuch-Retrospective-10/dp/B001D84RMA",
+                            wisher: "Mark"
+                        },
+                        {
+                            _id: "4fb3c10bf9ea0b7a21000001",
+                            created_at: "2012-05-16T15:00:27.191Z",
+                            description: "Kindle",
+                            imgUrl: "http://g-ecx.images-amazon.com/images/G/02/kindle/stripe/FS-KT-135._V135295771_.gif",
+                            price: "89",
+                            url: "http://www.amazon.co.uk/gp/product/B0051QVF7A",
+                            wisher: "Mark"
+                        },
+                        {
+                            wisher: "Mark",
+                            description: "A cheap tablet (actually £180)",
+                            url: "http://www.ebuyer.com/344245-scroll-extreme-tablet-pc-54242",
+                            imgUrl: "http://image.ebuyer.com/UK/P600-0344245-01.jpg",
+                            price: "99",
+                            created_at: "2012-06-14T13:28:03.473Z",
+                            _id: "4fd9e6e3ad12600100000001"
+                        }
+                ];
+                var rows = '', total=0, bought=0;
+                for (var i=0; i<pressieList.length; i++) {
+                    total++;
+                    if (pressieList[i].removed_at) {
+                        bought++
+                    } else {
+                        rows = rows + '<tr>' +
+                            '<td>'+pressieList[i].description+'</td>'+
+                            '<td><img src="'+pressieList[i].imgUrl+'" alt="Picture of the present" height="80"/></td>'+
+                            '<td><button class="bought-it" data-id="'+pressieList[i]._id+'">I have bought this</button></td>'
+                            '</tr>';
+                    }
+                }
+                $('table#pressies tbody').html(rows);
+                $('button.bought-it').click(function(){
+                    $(this).parent().parent().hide(1500);
+                    bought++;
+                    updateProgressBar(bought, total);
+                });
+                updateProgressBar(bought, total);
+            });
+        </script>
+    </body>
+</html>

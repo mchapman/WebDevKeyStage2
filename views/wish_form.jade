@@ -1,0 +1,27 @@
+div.offset4
+    h1= title
+div.span8.offset2
+    form(class="form-horizontal", method="post")
+        fieldset
+            div.control-group
+                label.control-label(for="editWishWisher") Wisher Name
+                .controls
+                    input(type="text", name="wisher", id="editWishWisher", value=wish.wisher)
+            div.control-group
+                label.control-label(for="editWishDescription") Description
+                .controls
+                    input(type="text", name="description", id="editWishDescription", value=wish.description)
+            div.control-group
+                label.control-label(for="editWishUrl") URL (for buying)
+                .controls
+                    input.span7(type="url", name="url", id="editWishUrl", value=wish.url)
+            div.control-group
+                label.control-label(for="editWishImgUrl") Image URL
+                .controls
+                    input.span7(type="url", name="imgUrl", id="editWishImgUrl", value=wish.imgUrl)
+            div.control-group
+                label.control-label(for="editWishPrice") Approximate price (£) :
+                .controls
+                    input.span1(type="number", name="price", min="1", max="100", id="editWishPrice", value=wish.price)
+            div.form-actions#editWishSubmit
+                input(type="submit", value=btn_text, class="btn btn-primary")

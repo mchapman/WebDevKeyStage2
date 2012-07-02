@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Mark's Wishlist</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+</head>
+<body>
+<p>Dear Father Christmas / Friends / Family,</p>
+<p>I would really like the following stuff:</p>
+<table id="pressies">
+    <thead>
+    <tr>
+        <th>Description</th>
+        <th>Picture</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<p>If you do buy me anything off the list please click the "I have bought this" button next to it, so that no-one else buys the same thing.  Thanks in advance,</p>
+<p>Mark</p>
+<p>P.S.  Sorry about the styling - hopefully the people doing the course will do better.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $.getJSON('http://stmarkswebdev.herokuapp.com/user/Mark.json?callback=?',
+            function(json, textStatus, jqXHR) {
+                var rows = '';
+                for (var i=0; i<json.length; i++) {
+                    rows = rows + '<tr>' +
+                            '<td>'+json[i].description+'</td>'+
+                            '<td><img src="'+json[i].imgUrl+'" alt="Picture of the present" height="80"/></td>'+
+                            '<td><button class="bought-it" data-id="'+json[i]._id+'">I have bought this</button></td>'
+                    '</tr>';
+                }
+                $('table#pressies tbody').html(rows);
+                $('button.bought-it').click(function(){
+                    $(this).parent().parent().hide(1500);
+                    $.get("http://stmarkswebdev.herokuapp.com/wish/"+$(this).attr('data-id')+'/remove?reason=Someone+bought+it');
+                });
+            }
+        );
+    });
+</script>
+</body>
+</html>

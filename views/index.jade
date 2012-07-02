@@ -1,0 +1,29 @@
+h1= title
+#wishlist
+    table.table
+        tr
+            th Wisher
+            th Description
+            th Picture
+            th Price
+            th Status
+            th
+        - each wish in Wishlist
+            tr
+                td= wish.wisher
+                td
+                    a(href=wish.url)= wish.description
+                td
+                    img(src=wish.imgUrl, alt='A picture of the wish', height='50')
+                td= wish.price
+                - if (typeof(wish.removed_at) !== 'undefined')
+                    td Removed
+                - else
+                    td Visible
+                td
+                    a.icon-pencil(href='/wish/'+wish._id+'/edit')
+                    a.icon-trash.destroy(href='/wish/'+wish._id)
+                    - if (typeof(wish.removed_at) !== 'undefined')
+                        a.icon-repeat(href='/wish/'+wish._id+'/restore')
+script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js')
+script(type='text/javascript', src='/js/delete.js')

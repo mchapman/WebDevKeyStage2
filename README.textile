@@ -1,4 +1,4 @@
-I am starting a web development after school club at my local primary school (St Marks, Hadlow Down, East Sussex) on 3rd November, with weekly 1 hour lessons after school on a Thursday (which apparently clashes with baton twirling club).  There are 10 pupils (if they all turn up) in years 4-6 (8-10 years old).  Classes are one hour (though that really turns out to be 50 minutes by the time they have settled down and got the computers booted).
+I am starting a web development after school club at my local primary school (St Marks, Hadlow Down, East Sussex) on 3rd November 2011, with weekly 1 hour lessons after school on a Thursday (which apparently clashes with baton twirling club).  There are 10 pupils (if they all turn up) in years 4-6 (8-10 years old).  Classes are one hour (though that really turns out to be 50 minutes by the time they have settled down and got the computers booted).
 
 I intend to keep this repo up to date with lesson plans, a record of how the lesson went, what I would have done differently etc.
 
